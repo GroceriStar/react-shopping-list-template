@@ -4,7 +4,7 @@ class Shoplist extends Component {
     render() {
         return (
             <div>
-              Shoplist component
+              Shoplist route
             </div>
         );
     }

@@ -11,7 +11,7 @@ class List extends Component {
     console.log(data.getAllDepartments());
     console.log(data.getAllIngredientsByOneDepartment("Fresh vegetables"));
 
-    
+
     return (
       <div>
         This is list route
