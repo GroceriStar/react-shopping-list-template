@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Todo extends Component {
     render() {
         return (
-            <div>Todo component</div>
+            <div>
+              Todo component
+            </div>
         );
     }
 }
