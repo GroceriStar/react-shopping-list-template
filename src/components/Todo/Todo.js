@@ -17,6 +17,7 @@ class Todo extends Component {
     const handleToggle = this.props.handleToggle;
     const handleRemove = this.props.handleRemove;
     const elementClass = 'xxx';
+    
     return (
       <li>
         <span onClick={handleRemove}>Text</span>
