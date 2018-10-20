@@ -25,6 +25,12 @@ class Header extends Component {
                             New
                           </Link>
                         </li>
+
+                        <li>
+                          <Link to='/display'>
+                            display
+                          </Link>
+                        </li>
                     </ul>
                 </nav>
             </header>

@@ -7,10 +7,13 @@ import {
 } from 'react-router-dom';
 
 
+
 import Home    from './Home/Home';
 import Profile from './Profile/Profile';
 import New     from './New/New';
 import List    from './List/List';
+import DisplayList from './DisplayList/DisplayList';
+
 
 class Main extends Component {
     render() {
@@ -21,6 +24,7 @@ class Main extends Component {
                     <Route path='/profile' component={Profile} />
                     <Route path='/new'     component={New} />
                     <Route path='/list'    component={List} />
+                    <Route path='/display'    component={DisplayList} />
                 </Switch>
             </main>
         );
