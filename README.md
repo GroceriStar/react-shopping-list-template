@@ -32,3 +32,17 @@ User can:
 * Click on item to get more information about item
 * User can logout
 
+
+#### Clone Grocery List Template
+1) Click Clone on template
+2) Edit grocery list name
+3) Review Departments and Ingredients. Make changes if you need
+4) Hide or delete unnecessary Department on manage page.
+
+#### Department
+You can 
+- hide
+- delete
+- skip
+- view
+- edit
