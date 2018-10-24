@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@babel/core": "7.1.0",
     "@groceristar/groceristar-fetch": "^1.1.25",
     "@svgr/webpack": "2.4.1",
@@ -16,6 +17,10 @@
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
+=======
+    "@groceristar/groceristar-fetch": "1.1.25",
+    "antd": "^3.10.2",
+>>>>>>> upstream/master
     "classnames": "^2.2.6",
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
@@ -35,6 +40,7 @@
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "lodash": "^4.17.11",
+<<<<<<< HEAD
     "mini-css-extract-plugin": "0.4.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
@@ -58,6 +64,16 @@
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.2"
+=======
+    "raven-js": "^3.27.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-final-form": "^3.6.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "react-select": "^2.1.1",
+    "reactstrap": "^6.5.0"
+>>>>>>> upstream/master
   },
   "scripts": {
     "start": "node scripts/start.js",
