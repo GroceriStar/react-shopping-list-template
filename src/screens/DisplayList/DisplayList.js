@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import gf from '@groceristar/groceristar-fetch/groceristar';
 class DisplayList extends Component {
 
+	state={
+		loaded: false
+	}
 
 	componentDidMount = () =>  {
 		this.groceryId3 = gf.getGroceryById(3);
+		this.setState({loaded: true});
 		this.ingredients = [];
 		for (var i = 0; i < this.groceryId3[0].departments.length ; i++) { 
   			this.ingredients.push(gf.getAllIngredientsByOneDepartment(this.groceryId3[0].departments[i]));
@@ -15,12 +19,12 @@ class DisplayList extends Component {
 		return (
 			<div>
 				{
-					this.groceryId3 &&
+					this.state.loaded &&
 					<span>NAME: {this.groceryId3[0].name}</span>
 				}
 				<ul>
 					{	
-						this.groceryId3 &&
+						this.state.loaded &&
 
 						this.groceryId3[0].departments.map((item, index) =>{
 							return(
