@@ -1,26 +1,45 @@
 import React, { Component } from 'react';
+import { Alert, Container, Row } from 'reactstrap';
 
 import data from '@groceristar/groceristar-fetch/groceristar'
 
 class Departments extends Component {
-    render() {
 
+  state={
+  loaded: false
+  }
 
-      console.log(data.getIngredients());
-      console.log(data.getGrocery());
-      console.log(data.getUsers());
-      console.log(data.getDepartments());
-      console.log(data.getAllDepartments());
-      console.log(data.getAllIngredientsByOneDepartment("Fresh vegetables"));
+  componentDidMount = () =>  {
+    this.departments = data.getAllDepartments();
+    this.setState({loaded: true});
 
+  }
 
+  render() {
+    return (
+      <div>
+        <Container>
+        { 
+          this.state.loaded &&
 
-        return (
-            <div>
-              Departments component
-            </div>
-        );
-    }
+          this.departments.map((item, index) =>{
+            return(
+              <Row>
+                <Alert color="warning" style={{width: "90vw"}}>
+                  {item}
+                </Alert>
+              </Row>
+            );
+            
+          }
+
+          )
+
+        }
+        </Container>
+      </div>
+    )
+  }
 }
 
 export default Departments;
