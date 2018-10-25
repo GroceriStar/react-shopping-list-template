@@ -13,6 +13,7 @@ import Profile from './Profile/Profile';
 import New     from './New/New';
 import List    from './List/List';
 import DisplayList from './DisplayList/DisplayList';
+import Departments from './Departments/Departments';
 
 
 class Main extends Component {
@@ -24,7 +25,8 @@ class Main extends Component {
                     <Route path='/profile' component={Profile} />
                     <Route path='/new'     component={New} />
                     <Route path='/list'    component={List} />
-                    <Route path='/display'    component={DisplayList} />
+                    <Route path='/departments'    component={Departments} />
+                    <Route path='/display'    component={DisplayList} exact />
                 </Switch>
             </main>
         );
