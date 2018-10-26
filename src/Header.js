@@ -31,6 +31,11 @@ class Header extends Component {
                             display
                           </Link>
                         </li>
+                        <li>
+                          <Link to='/departments'>
+                            departments
+                          </Link>
+                        </li>
                     </ul>
                 </nav>
             </header>
