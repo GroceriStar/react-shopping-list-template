@@ -3,13 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@groceristar/groceristar-fetch": "1.1.27",
-    "antd": "^3.10.1",
-=======
-    "@groceristar/groceristar-fetch": "1.1.25",
     "antd": "^3.10.2",
->>>>>>> 99dec06d5bbccb0d001b95f50f27c8f0abcf0347
     "classnames": "^2.2.6",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
