@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 
 import data from '@groceristar/groceristar-fetch/groceristar'
 
-class Departments extends Component {
+class Ingredients extends Component {
 
   state={
   loaded: false
   }
 
   componentDidMount = () =>  {
-    this.departments = data.getAllDepartments();
+    console.log(this.props.location.state.department);
+    this.ingredients = data.getAllIngredientsByOneDepartment(this.props.location.state.department);;
     this.setState({loaded: true});
 
   }
@@ -20,19 +21,15 @@ class Departments extends Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container fluid style={{backgroundColor: '#FFC324', color:'white', fontSize:24}}>
         { 
           this.state.loaded &&
 
-          this.departments.map((item, index) =>{
+          this.ingredients.map((item, index) =>{
             return(
-              <Link to={{ pathname: '/ingredients', state: { department: item} }}>
-              <Row>
-                <Alert color="warning" style={{width: "90vw"}}>
+              <Row style={{paddingTop:'1%',paddingLeft: '5%'}}>
                   {item}
-                </Alert>
               </Row>
-              </Link>
             );
             
           }
@@ -46,4 +43,4 @@ class Departments extends Component {
   }
 }
 
-export default Departments;
+export default Ingredients;
