@@ -3,11 +3,12 @@ import gf from '@groceristar/groceristar-fetch/groceristar';
 class DisplayList extends Component {
 
 	state={
-		loaded: false,
-		test: this.props.location.state.test
+		loaded: false
 	}
 
 	componentDidMount = () =>  {
+		const department = this.props.match.params;
+		console.log(department);
 		this.groceryId3 = gf.getGroceryById(3);
 		this.setState({loaded: true});
 		this.ingredients = [];
@@ -21,10 +22,7 @@ class DisplayList extends Component {
 			<div>
 				{
 					this.state.loaded &&
-					<div>
 					<span>NAME: {this.groceryId3[0].name}</span>
-					<span>TEST: {this.state.test}</span>
-					</div>
 				}
 				<ul>
 					{	
