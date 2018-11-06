@@ -7,6 +7,8 @@
 
 [Documentation website](https://groceristar.github.io/documentation/)
 
+[Gifs from our application[(https://github.com/GroceriStar/react-native-shoppin-list#shopping-list-app-videos)
+
 #### Overview
 
 Basic functionality:
