@@ -19,7 +19,7 @@ import Ingredients from './Ingredients/Ingredients';
 
 
 
-class Routes extends Component {
+class Router extends Component {
     render() {
         return (
               <Switch>
@@ -36,4 +36,6 @@ class Routes extends Component {
     }
 }
 
-export default Routes;
+
+
+export default Router;
