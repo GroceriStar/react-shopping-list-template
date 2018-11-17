@@ -8,28 +8,25 @@ import {
 
 
 
-import Home    from './Home/Home';
-import Profile from './Profile/Profile';
-import New     from './New/New';
-import List    from './List/List';
-import DisplayList from './DisplayList/DisplayList';
-import Departments from './Departments/Departments';
-import Ingredients from './Ingredients/Ingredients';
+// import Home    from './Home/Home';
+// import Profile from './Profile/Profile';
+// import New     from './New/New';
+// import List    from './List/List';
+// import DisplayList from './DisplayList/DisplayList';
+// import Departments from './Departments/Departments';
+// import Ingredients from './Ingredients/Ingredients';
+//
+
 
 
 class Main extends Component {
     render() {
         return (
             <main>
-                <Switch>
-                    <Route path='/'        component={Home} exact />
-                    <Route path='/profile' component={Profile} />
-                    <Route path='/new'     component={New} />
-                    <Route path='/list'    component={List} />
-                    <Route path='/departments'    component={Departments} />
-                    <Route path='/display'    component={DisplayList} exact />
-                    <Route path='/ingredients'    component={Ingredients} exact />
-                </Switch>
+              <Routes />
+
+
+
             </main>
         );
     }
