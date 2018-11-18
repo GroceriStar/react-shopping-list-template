@@ -1,11 +1,11 @@
 import React, {
   Component
 } from 'react';
-import {
-  Switch,
-  Route
-} from 'react-router-dom';
-
+// import {
+//   Switch,
+//   Route
+// } from 'react-router-dom';
+// import Router from './././Router'
 
 
 // import Home    from './Home/Home';
@@ -23,7 +23,7 @@ class Main extends Component {
     render() {
         return (
             <main>
-              <Routes />
+              <Router />
 
 
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './components/Header/Header';
-import Main   from './screens/Main';
+import Router   from './Router';
 import './App.css';
 
 
@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <Header />
 
-        <Main />
+        <Router />
       </div>
     );
   }

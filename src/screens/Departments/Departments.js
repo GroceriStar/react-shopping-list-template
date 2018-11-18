@@ -6,22 +6,22 @@ import data from '@groceristar/groceristar-fetch/groceristar'
 
 class Departments extends Component {
 
-  state={
-  loaded: false
+  state = {
+    loaded: false
   }
 
   componentDidMount = () =>  {
     this.departments = data.getAllDepartments();
-    this.setState({loaded: true});
+    this.setState({ loaded: true });
 
   }
 
- 
+
   render() {
     return (
       <div>
         <Container>
-        { 
+        {
           this.state.loaded &&
 
           this.departments.map((item, index) =>{
@@ -34,7 +34,7 @@ class Departments extends Component {
               </Row>
               </Link>
             );
-            
+
           }
 
           )

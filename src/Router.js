@@ -8,13 +8,13 @@ import {
 
 
 
-import Home    from './Home/Home';
-import Profile from './Profile/Profile';
-import New     from './New/New';
-import List    from './List/List';
-import DisplayList from './DisplayList/DisplayList';
-import Departments from './Departments/Departments';
-import Ingredients from './Ingredients/Ingredients';
+import Home        from './screens/Home/Home';
+import Profile     from './screens/Profile/Profile';
+import New         from './screens/New/New';
+import List        from './screens/List/List';
+import DisplayList from './screens/DisplayList/DisplayList';
+import Departments from './screens/Departments/Departments';
+import Ingredients from './screens/Ingredients/Ingredients';
 
 
 

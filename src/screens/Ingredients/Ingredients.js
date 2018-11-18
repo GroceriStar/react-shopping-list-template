@@ -6,8 +6,8 @@ import data from '@groceristar/groceristar-fetch/groceristar'
 
 class Ingredients extends Component {
 
-  state={
-  loaded: false
+  state = {
+    loaded: false
   }
 
   componentDidMount = () =>  {
@@ -17,12 +17,12 @@ class Ingredients extends Component {
 
   }
 
- 
+
   render() {
     return (
       <div>
         <Container fluid style={{backgroundColor: '#FFC324', color:'white', fontSize:24}}>
-        { 
+        {
           this.state.loaded &&
 
           this.ingredients.map((item, index) =>{
@@ -31,7 +31,7 @@ class Ingredients extends Component {
                   {item}
               </Row>
             );
-            
+
           }
 
           )
