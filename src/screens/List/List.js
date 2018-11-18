@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 
-import data from '@groceristar/groceristar-fetch/groceristar';
+import { getIngredients,
+  getGroceryLists,
+  getUsers,
+  getDepartments,
+  getAllIngredients
+} from "../selectors/selector.js";
+
+
+
 
 class List extends Component {
 
   render() {
-    console.log(data.getIngredients());
-    console.log(data.getGrocery());
-    console.log(data.getUsers());
-    console.log(data.getDepartments());
-    console.log(data.getAllDepartments());
-    console.log(data.getAllIngredientsByOneDepartment("Fresh vegetables"));
+
+    console.log(getAllIngredients());
+    console.log(getGroceryLists());
+    console.log(getUsers());
+    console.log(getDepartments(false));
+    console.log(getDepartments(false));
+
+    console.log(getIngredients("Fresh vegetables"));
 
 
     return (

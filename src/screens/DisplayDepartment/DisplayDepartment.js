@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import gf from '@groceristar/groceristar-fetch/groceristar';
+import { getIngredients } from "../selectors/selector.js";
 class DisplayList extends Component {
 
 	state={
@@ -12,8 +12,9 @@ class DisplayList extends Component {
 		this.groceryId3 = gf.getGroceryById(3);
 		this.setState({loaded: true});
 		this.ingredients = [];
-		for (var i = 0; i < this.groceryId3[0].departments.length ; i++) { 
-  			this.ingredients.push(gf.getAllIngredientsByOneDepartment(this.groceryId3[0].departments[i]));
+		//@TODO replace with lodash
+		for (var i = 0; i < this.groceryId3[0].departments.length ; i++) {
+  			this.ingredients.push(getIngredients(this.groceryId3[0].departments[i]));
 		}
 	}
 
@@ -25,7 +26,7 @@ class DisplayList extends Component {
 					<span>NAME: {this.groceryId3[0].name}</span>
 				}
 				<ul>
-					{	
+					{
 						this.state.loaded &&
 
 						this.groceryId3[0].departments.map((item, index) =>{
@@ -43,7 +44,7 @@ class DisplayList extends Component {
 									</ul>
 								</li>
 							);
-							
+
 						}
 
 						)

@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 
 //@TODO convert it later to array with loop.
 
+// or
+const Link1 = props => <Link to="/" {...props} />
+// <Button component={Link1}>Button</Button>
+
 const menu = [
   {'/', 'Home'},
   {'/profile', 'Profile'},

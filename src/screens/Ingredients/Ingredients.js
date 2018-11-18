@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import { Alert, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-import data from '@groceristar/groceristar-fetch/groceristar'
+
+
+import { getIngredients } from "../selectors/selector.js";
+
+
+
+
 
 class Ingredients extends Component {
 
@@ -12,8 +18,8 @@ class Ingredients extends Component {
 
   componentDidMount = () =>  {
     console.log(this.props.location.state.department);
-    this.ingredients = data.getAllIngredientsByOneDepartment(this.props.location.state.department);;
-    this.setState({loaded: true});
+    this.ingredients = getIngredients(this.props.location.state.department);
+    this.setState({ loaded: true });
 
   }
 

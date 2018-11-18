@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Alert, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-import data from '@groceristar/groceristar-fetch/groceristar'
+import { getDepartments } from "../selectors/selector.js";
 
 class Departments extends Component {
 
@@ -11,7 +11,7 @@ class Departments extends Component {
   }
 
   componentDidMount = () =>  {
-    this.departments = data.getAllDepartments();
+    this.departments = getDepartments();
     this.setState({ loaded: true });
 
   }
@@ -24,7 +24,7 @@ class Departments extends Component {
         {
           this.state.loaded &&
 
-          this.departments.map((item, index) =>{
+          this.departments.map((item, index) => {
             return(
               <Link to={{ pathname: '/ingredients', state: { department: item} }}>
               <Row>
