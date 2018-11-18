@@ -5,9 +5,10 @@ import _ from 'lodash';
 
 class DisplayList extends Component {
 
+	//@TODO move to constructor
 	state = {
 		loaded: false,
-		test: this.props.location.state.test
+		// test: this.props.location.state.test
 	}
 
 	componentDidMount = () =>  {

@@ -1,5 +1,7 @@
 import { groceriStar } from "@groceristar/groceristar-fetch";
 
+console.log(groceriStar);
+
 //
 // const getDepartments = () => {
 //   return groceriStar.getAllDepartments();

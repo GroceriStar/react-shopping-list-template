@@ -14,13 +14,13 @@ class List extends Component {
 
   render() {
 
-    console.log(getAllIngredients());
-    console.log(getGroceryLists());
-    console.log(getUsers());
-    console.log(getDepartments(false));
-    console.log(getDepartments(false));
-
-    console.log(getIngredients("Fresh vegetables"));
+    // console.log(getAllIngredients());
+    // console.log(getGroceryLists());
+    // console.log(getUsers());
+    // console.log(getDepartments(false));
+    // console.log(getDepartments(false));
+    //
+    // console.log(getIngredients("Fresh vegetables"));
 
 
     return (
