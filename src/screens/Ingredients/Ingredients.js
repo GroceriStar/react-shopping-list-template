@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 
-import { getIngredients } from "../selectors/selector.js";
+import { getIngredients } from "../../selectors/selector.js";
 
 
 

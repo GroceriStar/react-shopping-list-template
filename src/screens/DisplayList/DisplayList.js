@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import { getIngredients } from "../selectors/selector.js";
+import { getIngredients, getGroceryById } from "../../selectors/selector.js";
+import _ from 'lodash';
 
 class DisplayList extends Component {
 
@@ -10,7 +11,7 @@ class DisplayList extends Component {
 	}
 
 	componentDidMount = () =>  {
-		this.groceryId3 = gf.getGroceryById(3);
+		this.groceryId3 = getGroceryById(3);
 		this.setState({ loaded: true });
 		this.ingredients = [];
 		//@TODO replace with lodash

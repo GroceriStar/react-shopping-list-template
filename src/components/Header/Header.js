@@ -10,11 +10,11 @@ const Link1 = props => <Link to="/" {...props} />
 // <Button component={Link1}>Button</Button>
 
 const menu = [
-  {'/', 'Home'},
-  {'/profile', 'Profile'},
-  {'/new', 'Create New Grocery'},
-  {'/display', 'Display????'},
-  {'/departments', 'Departments'}
+  ['/', 'Home'],
+  ['/profile', 'Profile'],
+  ['/new', 'Create New Grocery'],
+  ['/display', 'Display????'],
+  ['/departments', 'Departments']
 
 ];
 

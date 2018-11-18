@@ -1,13 +1,13 @@
 import { groceriStar } from "@groceristar/groceristar-fetch";
 
+//
+// const getDepartments = () => {
+//   return groceriStar.getAllDepartments();
+// }
 
-const getDepartments = () => {
-  return groceriStar..getAllDepartments();
-}
 
-//we use number 3 here before
 const getGroceryById = (id) => {
-  return groceriStar.getGroceryById
+  return groceriStar.getGroceryById(id);
 }
 
 //by department name, but i don't want to make this name long
@@ -39,4 +39,4 @@ const getDepartments = (all = true) => {
   return groceriStar.getDepartments();
 }
 
-export { getDish, getRecipeChickenKyiv }
+export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments }

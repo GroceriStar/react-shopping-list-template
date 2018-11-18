@@ -5,7 +5,7 @@ import { getIngredients,
   getUsers,
   getDepartments,
   getAllIngredients
-} from "../selectors/selector.js";
+} from "../../selectors/selector.js";
 
 
 

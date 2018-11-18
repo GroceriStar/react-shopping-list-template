@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { getIngredients } from "../selectors/selector.js";
+
+import _ from 'lodash';
+
 class DisplayList extends Component {
 
 	state={

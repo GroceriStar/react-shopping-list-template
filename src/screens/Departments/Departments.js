@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Alert, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-import { getDepartments } from "../selectors/selector.js";
+import _ from 'lodash';
+
+import { getDepartments } from "../../selectors/selector.js";
 
 class Departments extends Component {
 
