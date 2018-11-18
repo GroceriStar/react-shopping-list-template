@@ -3,6 +3,17 @@ import React, {
 } from 'react';
 import { Link } from 'react-router-dom';
 
+//@TODO convert it later to array with loop.
+
+const menu = [
+  {'/', 'Home'},
+  {'/profile', 'Profile'},
+  {'/new', 'Create New Grocery'},
+  {'/display', 'Display????'},
+  {'/departments', 'Departments'}
+
+];
+
 class Header extends Component {
 
     render() {

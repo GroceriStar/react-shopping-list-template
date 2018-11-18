@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import data from '@groceristar/groceristar-fetch/groceristar';
 
 class List extends Component {

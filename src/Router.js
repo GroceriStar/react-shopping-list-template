@@ -20,20 +20,20 @@ import Ingredients from './screens/Ingredients/Ingredients';
 
 
 class Router extends Component {
-    render() {
-        return (
-              <Switch>
-                  <Route path='/'            component={Home} exact />
-                  <Route path='/profile'     component={Profile} />
-                  <Route path='/new'         component={New} />
-                  <Route path='/list'        component={List} />
-                  <Route path='/departments' component={Departments} />
-                  {/* Are we reallly can have exact for a few routes? */}
-                  <Route path='/display'     component={DisplayList} exact />
-                  <Route path='/ingredients' component={Ingredients} exact />
-              </Switch>
-        );
-    }
+  render() {
+    return (
+          <Switch>
+              <Route path='/'            component={Home} exact />
+              <Route path='/profile'     component={Profile} />
+              <Route path='/new'         component={New} />
+              <Route path='/list'        component={List} />
+              <Route path='/departments' component={Departments} />
+              {/* Are we reallly can have exact for a few routes? */}
+              <Route path='/display'     component={DisplayList} exact />
+              <Route path='/ingredients' component={Ingredients} exact />
+          </Switch>
+    );
+  }
 }
 
 
