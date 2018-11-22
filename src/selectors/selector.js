@@ -1,44 +1,36 @@
-import { groceriStar } from "@groceristar/groceristar-fetch";
-
-console.log(groceriStar);
-
-//
-// const getDepartments = () => {
-//   return groceriStar.getAllDepartments();
-// }
-
+import { groceristar } from "@groceristar/groceristar-fetch";
 
 const getGroceryById = (id) => {
-  return groceriStar.getGroceryById(id);
+  return groceristar.getGroceryById(id);
 }
 
 //by department name, but i don't want to make this name long
 // @TODO change it later.
 // "Fresh vegetables" we used
 const getIngredients = (departmentName) => {
-  return groceriStar.getAllIngredientsByOneDepartment(departmentName);
+  return groceristar.getAllIngredientsByOneDepartment(departmentName);
 }
 
 
 const getAllIngredients = () => {
-  return groceriStar.getIngredients();
+  return groceristar.getIngredients();
 }
 
 const getGroceryLists = () => {
-  return groceriStar.getGrocery();
+  return groceristar.getGrocery();
 }
 
 const getUsers = () => {
-  return groceriStar.getUsers();
+  return groceristar.getUsers();
 }
 
 const getDepartments = (all = true) => {
 
   if( all ){
-    return groceriStar.getAllDepartments();
+    return groceristar.getAllDepartments();
   }
 
-  return groceriStar.getDepartments();
+  return groceristar.getDepartments();
 }
 
 export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments }
