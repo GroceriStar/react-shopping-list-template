@@ -7,6 +7,8 @@
 
 [Documentation website](https://groceristar.github.io/documentation/)
 
+[Gifs from our application[(https://github.com/GroceriStar/react-native-shoppin-list#shopping-list-app-videos)
+
 #### Overview
 
 Basic functionality:
@@ -47,6 +49,38 @@ You can
 - view
 - edit
 
+
+
+
+Inventory of all shopping lists. Shopping/grocery can
+* Adding items (quantity, measurements, additional notes);
+* Sorting items (A-Z, Z-A, 1-99, 99-1 ). Or drag-n-drop sorting;
+* Marking items as "purchased" or "non-purchased”;
+* Deleting items (delete one/all);
+* Moving items (move items to another list, copy items);
+* Product Suggestions;
+* Sharing with community, family members, via email
+* Deparments management
+* Predefined grocery lists. GL collection.
+* Grocery list cloning
+* Empty grocery list creation
+* Autogeneration of GL from recipes
+* Import grocery items from Excel file
+
+
+"Cloning"(when user "clone" a list, it's appears in his account). User cannot change a template(grocery list from collection), but can apply changes to cloned version. We change a Grocery List ID and if user change Departments, Ingredients - we replace them(in order to keep main GL in save).
+
+
+You can add grocery lists, you can create them from collection, or make your own list.
+All ingredients are non-purchased from the begining. 
+When you check ingredient(we assume you are buying it) - this ingredient get status purchased.
+Purchased items will have this information: qty / Date / notes/ place where it was buyed.
+
+Note: If we uncheck ingredient - it change it's status and removed from purchased list.
+
+Note: we should have an ACL(Controlling data access), so user are not able to delete data of other people.
+
+---
 
 ## Important Notes
 - We'll use [Sentry Releases](https://docs.sentry.io/learn/releases/) to ship better code

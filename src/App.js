@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import Header from './Header';
-import Main   from './screens/Main';
+import Header from './components/Header/Header';
+import Router from './Router';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
@@ -10,7 +11,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Main />
+
+        <Router />
       </div>
     );
   }

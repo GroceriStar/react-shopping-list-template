@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
+import { getIngredients } from "../selectors/selector.js";
 
-import { getIngredients, getGroceryById } from "../../selectors/selector.js";
 import _ from 'lodash';
 
 class DisplayList extends Component {
 
-	//@TODO move to constructor
-	state = {
-		loaded: false,
-		// test: this.props.location.state.test
+	state={
+		loaded: false
 	}
 
 	componentDidMount = () =>  {
-		this.groceryId3 = getGroceryById(3);
-		this.setState({ loaded: true });
+		const department = this.props.match.params;
+		console.log(department);
+		this.groceryId3 = gf.getGroceryById(3);
+		this.setState({loaded: true});
 		this.ingredients = [];
 		//@TODO replace with lodash
 		for (var i = 0; i < this.groceryId3[0].departments.length ; i++) {
@@ -26,10 +26,7 @@ class DisplayList extends Component {
 			<div>
 				{
 					this.state.loaded &&
-					<div>
 					<span>NAME: {this.groceryId3[0].name}</span>
-					<span>TEST: {this.state.test}</span>
-					</div>
 				}
 				<ul>
 					{
