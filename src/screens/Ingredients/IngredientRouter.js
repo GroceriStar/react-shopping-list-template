@@ -2,27 +2,27 @@ import React, {
   Component
 } from 'react';
 import {
-  Switch,
+
   Route
 } from 'react-router-dom';
 
 
-
-import Home        from './screens/Home/Home';
-import Profile     from './screens/Profile/Profile';
-import New         from './screens/New/New';
-import List        from './screens/List/List';
-import DisplayList from './screens/DisplayList/DisplayList';
-import Departments from './screens/Departments/Departments';
-import Ingredients from './screens/Ingredients/Ingredients';
-
-
+//
+// import Home        from './screens/Home/Home';
+// import Profile     from './screens/Profile/Profile';
+// import New         from './screens/New/New';
+// import List        from './screens/List/List';
+// import DisplayList from './screens/DisplayList/DisplayList';
+// import Departments from './screens/Departments/Departments';
+// import Ingredients from './screens/Ingredients/Ingredients';
 
 
+
+// we don't use switch because of modularity approach that we have here
 class Router extends Component {
   render() {
     return (
-          <Switch>
+          // <Switch>
               <Route path='/'            component={Home} exact />
               <Route path='/profile'     component={Profile} />
               <Route path='/new'         component={New} />
@@ -31,7 +31,7 @@ class Router extends Component {
               {/* Are we reallly can have exact for a few routes? */}
               <Route path='/display'     component={DisplayList} exact />
               <Route path='/ingredients' component={Ingredients} exact />
-          </Switch>
+          // </Switch>
     );
   }
 }
