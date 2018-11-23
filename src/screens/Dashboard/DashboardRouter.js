@@ -5,6 +5,8 @@ import {
   Route
 } from 'react-router-dom';
 
+import Home        from './screens/Home/Home';
+
 //@TODO please review all routes that we have here. if some of routes don't work -
 // please create a simple empty component that we'll extend later
 
@@ -17,10 +19,11 @@ class DashboardRouter extends Component {
     return (
           <Fragment>
             <Route path='/'            component={Home} exact />
-            <Route path='/profile'     component={Profile} />
+            {/*<Route path='/profile'     component={Profile} />
             <Route path='/new'         component={New} />
             <Route path='/list'        component={List} />
             <Route path='/departments' component={Departments} />
+            */}
           </Fragment>
     );
   }
