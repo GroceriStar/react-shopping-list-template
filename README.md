@@ -1,13 +1,11 @@
 # React Shopping List Template ()
 
 #### Table of contents
-[Trello Board](https://trello.com/b/Wm9rrQRk/shopping-list-template)
-
-[:(Article]()
-
-[Documentation website](https://groceristar.github.io/documentation/)
-
-[Gifs from our application[(https://github.com/GroceriStar/react-native-shoppin-list#shopping-list-app-videos)
+ - [Trello Board](https://trello.com/b/Wm9rrQRk/shopping-list-template)
+ - [:(Article]()
+ - [Documentation website](https://groceristar.github.io/documentation/)
+ - [Gifs from our application](https://github.com/GroceriStar/react-native-shoppin-list#shopping-list-app-videos)
+ - [Routes](https://github.com/GroceriStar/documentation/blob/master/docs/routes.md)
 
 #### Overview
 
