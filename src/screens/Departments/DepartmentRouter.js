@@ -8,7 +8,7 @@ import {
 // @TODO instead of screens we'll use views folder soon.
 
 //
-import Home        from './screens/Home/Home';
+// import Home        from './screens/Home/Home';
 // import Profile     from './screens/Profile/Profile';
 // import New         from './screens/New/New';
 // import List        from './screens/List/List';
@@ -23,15 +23,15 @@ import Home        from './screens/Home/Home';
 class DepartmentRouter extends Component {
   render() {
     return (
-          <Fragment>
-            <Route path='/'            component={Home} exact />
-            {/*
-            <Route path='/profile'     component={Profile} />
-            <Route path='/new'         component={New} />
-            <Route path='/list'        component={List} />
-            <Route path='/departments' component={Departments} />
-            */}
-          </Fragment>
+      <Fragment>
+        <Route path='/department/:id/groceryId'      component={Component} />
+        <Route path='/departments/show/:groceryId'   component={Component} />
+        <Route path='/hide/department/:id/:groceryId' component={Component} />
+        <Route path='/show/department/:id/:groceryId' component={Component} />
+        <Route path='/show/all/:groceryId' component={Component} />
+        <Route path='/visibility/department/:id/groceryId' component={Component} />
+        <Route path='/remove/department/:id/groceryId' component={Component} />
+      </Fragment>
     );
   }
 }

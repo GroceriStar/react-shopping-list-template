@@ -9,12 +9,12 @@ import {
 
 //
 import Home        from './screens/Home/Home';
-// import Profile     from './screens/Profile/Profile';
+
 // import New         from './screens/New/New';
 // import List        from './screens/List/List';
-// import DisplayList from './screens/DisplayList/DisplayList';
+
 // import Departments from './screens/Departments/Departments';
-// import Ingredients from './screens/Ingredients/Ingredients';
+
 
 
 //@TODO please review all routes that we have here. if some of routes don't work -
@@ -25,12 +25,16 @@ class GroceryRouter extends Component {
   render() {
     return (
           <Fragment>
-            <Route path='/'            component={Home} exact />
-            {/*<Route path='/profile'     component={Profile} />
-            <Route path='/new'         component={New} />
-            <Route path='/list'        component={List} />
-            <Route path='/departments' component={Departments} />
-            */}
+            <Route path='/view/grocery/:groceryId'            component={Home} exact />
+            <Route path='/view/ultimategrocery'     component={Component} />
+            <Route path='/view/collection/groceries'         component={Component} />
+            <Route path='/view/grocery/hidden/:groceryId'        component={Component} />
+            <Route path='/auth/attach-grocery-to-user/:groceryId' component={Component} />
+            <Route path='/remove/grocery/:groceryId' component={Component} />
+            <Route path='/clone/:groceryId' component={Component} />
+            <Route path='/cloneform/' component={Component} />
+            <Route path='/afterclone' component={Component} />
+            <Route path='/clone-grocery/:groceryId' component={Component} />
           </Fragment>
     );
   }

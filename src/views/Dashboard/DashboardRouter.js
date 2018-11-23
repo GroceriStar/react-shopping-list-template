@@ -19,10 +19,10 @@ class DashboardRouter extends Component {
     return (
           <Fragment>
             <Route path='/'            component={Home} exact />
-            {/*<Route path='/profile'     component={Profile} />
-            <Route path='/new'         component={New} />
-            <Route path='/list'        component={List} />
-            <Route path='/departments' component={Departments} />
+            {/*<Route path='/create-new-grocery'     component={Profile} />
+            <Route path='/view/groceries'         component={New} />
+            <Route path='/change/grocery/name/:groceryId'        component={List} />
+            <Route path='/update/name' component={Departments} />
             */}
           </Fragment>
     );
