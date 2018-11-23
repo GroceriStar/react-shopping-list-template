@@ -18,7 +18,7 @@ class DashboardRouter extends Component {
   render() {
     return (
           <Fragment>
-            <Route path='/'            component={Home} exact />
+            
             {/*<Route path='/create-new-grocery'     component={Profile} />
             <Route path='/view/groceries'         component={New} />
             <Route path='/change/grocery/name/:groceryId'        component={List} />

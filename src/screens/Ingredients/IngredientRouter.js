@@ -9,12 +9,7 @@ import {
 
 //
 // import Home        from './screens/Home/Home';
-// import Profile     from './screens/Profile/Profile';
-// import New         from './screens/New/New';
-// import List        from './screens/List/List';
-// import DisplayList from './screens/DisplayList/DisplayList';
-// import Departments from './screens/Departments/Departments';
-// import Ingredients from './screens/Ingredients/Ingredients';
+
 
 
 //@TODO please review all routes that we have here. if some of routes don't work -
@@ -25,7 +20,7 @@ class IngredientRouter extends Component {
   render() {
     return (
           <Fragment>
-            <Route path='/'            component={Home} exact />
+
             {/*<Route path='/path'     component={Component} />
             <Route path='/path'         component={Component} />
             <Route path='/path'        component={Component} />

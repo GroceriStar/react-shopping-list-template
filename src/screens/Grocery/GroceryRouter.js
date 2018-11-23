@@ -25,6 +25,7 @@ class GroceryRouter extends Component {
   render() {
     return (
           <Fragment>
+          {/*
             <Route path='/view/grocery/:groceryId'            component={Home} exact />
             <Route path='/view/ultimategrocery'     component={Component} />
             <Route path='/view/collection/groceries'         component={Component} />
@@ -35,6 +36,7 @@ class GroceryRouter extends Component {
             <Route path='/cloneform/' component={Component} />
             <Route path='/afterclone' component={Component} />
             <Route path='/clone-grocery/:groceryId' component={Component} />
+            */}
           </Fragment>
     );
   }
