@@ -1,11 +1,11 @@
 import React, {
-  Component
+  Component, Fragment
 } from 'react';
 import {
-
   Route
 } from 'react-router-dom';
 
+// @TODO instead of screens we'll use views folder soon.
 
 //
 // import Home        from './screens/Home/Home';
@@ -17,25 +17,24 @@ import {
 // import Ingredients from './screens/Ingredients/Ingredients';
 
 
+//@TODO please review all routes that we have here. if some of routes don't work -
+// please create a simple empty component that we'll extend later
 
 // we don't use switch because of modularity approach that we have here
-class Router extends Component {
+class IngredientRouter extends Component {
   render() {
     return (
-          // <Switch>
-              <Route path='/'            component={Home} exact />
-              <Route path='/profile'     component={Profile} />
-              <Route path='/new'         component={New} />
-              <Route path='/list'        component={List} />
-              <Route path='/departments' component={Departments} />
-              {/* Are we reallly can have exact for a few routes? */}
-              <Route path='/display'     component={DisplayList} exact />
-              <Route path='/ingredients' component={Ingredients} exact />
-          // </Switch>
+          <Fragment>
+            <Route path='/'            component={Home} exact />
+            <Route path='/profile'     component={Profile} />
+            <Route path='/new'         component={New} />
+            <Route path='/list'        component={List} />
+            <Route path='/departments' component={Departments} />
+          </Fragment>
     );
   }
 }
 
 
 
-export default Router;
+export default IngredientRouter;
