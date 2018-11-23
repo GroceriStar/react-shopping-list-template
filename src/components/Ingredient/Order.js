@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Id extends Component {
+class Order extends Component {
     render() {
         return (
-          <div>Id</div>
+          <div>Order</div>
 
         );
     }
 }
 
-export default Id;
+export default Order;

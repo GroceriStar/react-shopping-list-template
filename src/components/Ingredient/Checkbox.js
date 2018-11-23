@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class Checkbox extends Component {
     render() {
         return (
-            <input type="checkbox">{this.props.children}</input>
+              <label>
+            <input type="checkbox" name={this.props.children} />
+            {this.props.children}
+            </label>
         );
     }
 }

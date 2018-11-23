@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-class Label extends Component {
+
+class EditableLable extends Component {
     render() {
         return (
             <label htmfor={this.props.id}>{this.props.children}</label>
@@ -8,4 +9,4 @@ class Label extends Component {
     }
 }
 
-export default Label;
+export default EditableLable;

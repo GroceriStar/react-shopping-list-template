@@ -51,6 +51,11 @@ class Header extends Component {
                             departments
                           </Link>
                         </li>
+                        <li>
+                          <Link to='/examples'>
+                            examples
+                          </Link>
+                        </li>
                     </ul>
                 </nav>
             </header>
