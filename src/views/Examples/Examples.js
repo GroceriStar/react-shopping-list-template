@@ -7,7 +7,7 @@ import EditableLabel  from '../../components/Ingredient/EditableLabel';
 import EditLink       from '../../components/Ingredient/EditLink';
 import Id             from '../../components/Ingredient/Id';
 import Label          from '../../components/Ingredient/Label';
-import ListElement    from '../../components/Ingredient/ListElement';
+import ListItem    from '../../components/Ingredient/ListItem';
 import Order          from '../../components/Ingredient/Order';
 import Selectbox      from '../../components/Ingredient/Selectbox';
 import Status         from '../../components/Ingredient/Status';
@@ -23,19 +23,19 @@ class Examples extends Component {
             <h3>Checkbox</h3>
               <Checkbox>Check</Checkbox>
             <h3>DeleteLink</h3>
-              <DeleteLink url="www.google.com">Link</DeleteLink>
+              <DeleteLink url="/examples">Link</DeleteLink>
             <h3>EditableLabel</h3>
               <EditableLabel id="ok">This is label</EditableLabel>
             <h3>EditLink</h3>
-              <EditLink url="google.com">Link</EditLink>
+              <EditLink url="/examples">Link</EditLink>
             <h3>Id</h3>
               <Id></Id>
             <h3>Label</h3>
               <Label>This is label</Label>
-            <h3>ListElement</h3>
-              <ListElement data={["First", "Second", "Thirld"]} />
+            <h3>ListItem</h3>
+              <ListItem data={["First", "Second", "Thirld"]} />
             <h3>Order</h3>
-              <Order></Order>
+              <Order data = {["Fish", "Milk", "Apple"]}/>
             <h3>Selectbox</h3>
               <Selectbox data={["Apple", "Rastberry", "12"]}/>
             <h3>Status</h3>
