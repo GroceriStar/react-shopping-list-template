@@ -15,6 +15,8 @@ import List        from './screens/List/List';
 import DisplayList from './screens/DisplayList/DisplayList';
 import Departments from './screens/Departments/Departments';
 import Ingredients from './screens/Ingredients/Ingredients';
+import Examples    from './views/Examples/Examples';
+
 
 
 // Later this router will be used as App router that will connect nested routes, from sub-components
@@ -32,6 +34,8 @@ class Router extends Component {
               {/* Are we reallly can have exact for a few routes? */}
               <Route path='/display'     component={DisplayList} exact />
               <Route path='/ingredients' component={Ingredients} exact />
+
+              <Route path='/examples'    component={Examples} exact />
           </Switch>
     );
   }
