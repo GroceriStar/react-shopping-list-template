@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import ListItem from './ListItem';
 
 class Order extends Component {
     render() {
         return (
-          <div>Order</div>
-
+            <ListItem data = {this.props.data} />
         );
     }
 }
