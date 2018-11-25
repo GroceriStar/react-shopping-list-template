@@ -12,6 +12,11 @@ import Order          from '../../components/Ingredient/Order';
 import Selectbox      from '../../components/Ingredient/Selectbox';
 import Status         from '../../components/Ingredient/Status';
 import TextId         from '../../components/Ingredient/TextId';
+import Title from '../../screens/Departments/Title';
+import AutoComplete from '../../screens/Departments/AutoComplete';
+import ListItemLink from '../../screens/Departments/ListItemLink';
+import ListItemEdit from '../../screens/Departments/ListItemEdit';
+import ListItemDelete from '../../screens/Departments/ListItemDelete';
 
 
 class Examples extends Component {
@@ -42,6 +47,15 @@ class Examples extends Component {
               <Status />
             <h3>TextId</h3>
               <TextId id="233">This is text with id</TextId>
+            <Title id="123">Title with id</Title>
+            <Title>AutoComplete</Title>
+              <AutoComplete data={['a', 'aa', 'aaa', 'b', 'bb', 'c', 'cc']} />
+            <Title>List Item with link</Title>
+              <ListItemLink list={['one', 'two', 'three']} />     
+            <Title>List Item Edit</Title>
+              <ListItemEdit list={['one', 'two', 'three']} />
+            <Title>List Item Delete</Title>
+              <ListItemDelete list={['one', 'two', 'three']} />
           </div>
         );
     }
