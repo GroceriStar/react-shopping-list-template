@@ -31,7 +31,9 @@ class EditLink extends Component {
           <div>
           <Link
             to={this.state.url}
-            onClick = {this.handleClick}>
+            onClick = {this.handleClick}
+            key = {this.props.id}
+            >
               {this.state.textLink}
           </Link>
           <input type="text"

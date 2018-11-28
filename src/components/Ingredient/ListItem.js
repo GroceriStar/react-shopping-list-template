@@ -10,6 +10,7 @@ class ListItem extends Component {
                 item =>
                   <Item
                     key={shortid.generate()}
+                    id={shortid.generate()}
                     item={item}
                   />
 

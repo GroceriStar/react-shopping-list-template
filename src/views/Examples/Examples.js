@@ -28,11 +28,11 @@ class Examples extends Component {
             <h3>Checkbox</h3>
               <Checkbox>Check</Checkbox>
             <h3>DeleteLink</h3>
-              <DeleteLink url="/examples">Link</DeleteLink>
+              <DeleteLink id = "123" url="/examples">Link</DeleteLink>
             <h3>EditableLabel</h3>
               <EditableLabel id="ok">This is label</EditableLabel>
             <h3>EditLink</h3>
-              <EditLink url="/examples">Link</EditLink>
+              <EditLink id = "1234" url="/examples">Link</EditLink>
             <h3>Id</h3>
               <Id></Id>
             <h3>Label</h3>
@@ -51,7 +51,7 @@ class Examples extends Component {
             <Title>AutoComplete</Title>
               <AutoComplete data={['a', 'aa', 'aaa', 'b', 'bb', 'c', 'cc']} />
             <Title>List Item with link</Title>
-              <ListItemLink list={['one', 'two', 'three']} />     
+              <ListItemLink list={['one', 'two', 'three']} />
             <Title>List Item Edit</Title>
               <ListItemEdit list={['one', 'two', 'three']} />
             <Title>List Item Delete</Title>

@@ -25,6 +25,8 @@ class EditLink extends Component {
           <Link
             onClick = {this.handleClick}
             hidden = {this.state.isHidden}
+            key = {this.props.id}
+
             to={this.state.url}
             >
               {this.state.textLink}
