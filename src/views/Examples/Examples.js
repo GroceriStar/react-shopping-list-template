@@ -28,11 +28,11 @@ class Examples extends Component {
             <h3>Checkbox</h3>
               <Checkbox>Check</Checkbox>
             <h3>DeleteLink</h3>
-              <DeleteLink id = "123" url="/examples">Link</DeleteLink>
+              <DeleteLink url="/examples/delete/1234">Link</DeleteLink>
             <h3>EditableLabel</h3>
               <EditableLabel id="ok">This is label</EditableLabel>
             <h3>EditLink</h3>
-              <EditLink id = "1234" url="/examples">Link</EditLink>
+              <EditLink id = "12" url="/examples">Link</EditLink>
             <h3>Id</h3>
               <Id></Id>
             <h3>Label</h3>

@@ -8,6 +8,7 @@ import {
 
 
 
+
 import Home        from './views/Home/Home';
 import Profile     from './views/Profile/Profile';
 import New         from './views/New/New';
@@ -16,6 +17,7 @@ import DisplayList from './screens/DisplayList/DisplayList';
 import Departments from './screens/Departments/Departments';
 import Ingredients from './screens/Ingredients/Ingredients';
 import Examples    from './views/Examples/Examples';
+import DeleteLink  from './views/Examples/DeleteLink';
 
 
 
@@ -36,6 +38,8 @@ class Router extends Component {
               <Route path='/ingredients' component={Ingredients} exact />
 
               <Route path='/examples'    component={Examples} exact />
+              <Route path='/examples/delete/:id' component={DeleteLink} exact />
+
           </Switch>
     );
   }
