@@ -1,5 +1,8 @@
 # React Shopping List Template ()
 
+https://groceristar.github.io/documentation/docs/shop-list-information/components-structure.html
+
+
 #### Table of contents
  - [Trello Board](https://trello.com/b/Wm9rrQRk/shopping-list-template)
  - [:(Article]()
@@ -40,7 +43,7 @@ User can:
 4) Hide or delete unnecessary Department on manage page.
 
 #### Department
-You can 
+You can
 - hide
 - delete
 - skip
@@ -70,7 +73,7 @@ Inventory of all shopping lists. Shopping/grocery can
 
 
 You can add grocery lists, you can create them from collection, or make your own list.
-All ingredients are non-purchased from the begining. 
+All ingredients are non-purchased from the begining.
 When you check ingredient(we assume you are buying it) - this ingredient get status purchased.
 Purchased items will have this information: qty / Date / notes/ place where it was buyed.
 
@@ -95,4 +98,3 @@ Note: we should have an ACL(Controlling data access), so user are not able to de
 - Each component should looks simple and understandable
 - We should use [ReactStrap](https://reactstrap.github.io/) components for faster development process
 - You should create and maintain documentation [GitBook](https://www.gitbook.com/)
-
