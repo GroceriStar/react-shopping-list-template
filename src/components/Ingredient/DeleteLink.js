@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import shortid from "shortid";
 
 class EditLink extends Component {
   constructor(props){
@@ -25,6 +26,7 @@ class EditLink extends Component {
           <Link
             onClick = {this.handleClick}
             hidden = {this.state.isHidden}
+            key = {shortid.generate()}
             to={this.state.url}
             >
               {this.state.textLink}

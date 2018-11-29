@@ -21,6 +21,8 @@ import ListItemDelete from '../../screens/Departments/ListItemDelete';
 
 class Examples extends Component {
     render() {
+      let id = 12345;
+      let id1 = 1234;
         return (
           <div>
             <h3>SimpleText</h3>
@@ -28,11 +30,11 @@ class Examples extends Component {
             <h3>Checkbox</h3>
               <Checkbox>Check</Checkbox>
             <h3>DeleteLink</h3>
-              <DeleteLink url="/examples">Link</DeleteLink>
+              <DeleteLink id = {this.id} url={"/examples/delete/" + this.id}>Link</DeleteLink>
             <h3>EditableLabel</h3>
               <EditableLabel id="ok">This is label</EditableLabel>
             <h3>EditLink</h3>
-              <EditLink url="/examples">Link</EditLink>
+              <EditLink id = {this.id1} url={"/examples/edit/" + this.id1}>Link</EditLink>
             <h3>Id</h3>
               <Id></Id>
             <h3>Label</h3>
@@ -51,7 +53,7 @@ class Examples extends Component {
             <Title>AutoComplete</Title>
               <AutoComplete data={['a', 'aa', 'aaa', 'b', 'bb', 'c', 'cc']} />
             <Title>List Item with link</Title>
-              <ListItemLink list={['one', 'two', 'three']} />     
+              <ListItemLink list={['one', 'two', 'three']} />
             <Title>List Item Edit</Title>
               <ListItemEdit list={['one', 'two', 'three']} />
             <Title>List Item Delete</Title>
