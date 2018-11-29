@@ -24,6 +24,7 @@ import EditLink    from './views/Examples/EditLink';
 class OldRouter extends Component {
 
   render() {
+    console.log("this is");
     return (
         <Switch>
           <Route path='/'            component={Home} exact />
@@ -35,10 +36,10 @@ class OldRouter extends Component {
           <Route path='/display'     component={DisplayList} exact />
           <Route path='/ingredients' component={Ingredients} exact />
 
-          <Route path='examples'    component={Examples} exact />
+          <Route path='/examples'    component={Examples} exact />
           <Route path='/examples/delete/:id' component={DeleteLink} />
           <Route path='/examples/edit/:id' component={EditLink} />
-        </Switch>
+      </Switch>
     );
   }
 
