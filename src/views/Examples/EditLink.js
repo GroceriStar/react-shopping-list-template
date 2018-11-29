@@ -3,6 +3,8 @@ import { Redirect } from 'react-router';
 
 class EditLink extends Component {
     render() {
+      console.log(this.props.id);
+        
       console.log("this is edit link");
         return (
           <Redirect to = "/examples" />
