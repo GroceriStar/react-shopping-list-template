@@ -8,10 +8,16 @@ class ProfileLayout extends Component {
     render() {
         return (
           <Layout>
-      <Header>Header</Header>
-      <Content>Content</Content>
-      <Footer>Footer</Footer>
-    </Layout>
+            <Header>
+              Header
+            </Header>
+            <Content>
+              Content
+            </Content>
+            <Footer>
+              Footer
+            </Footer>
+          </Layout>
         );
     }
 }
