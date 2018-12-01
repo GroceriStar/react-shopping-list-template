@@ -34,7 +34,7 @@ class Router extends Component {
   render() {
     return (
           <Switch>
-              <Route path='/'            component={OldRouter} exact />
+              <Route path='/'            component={OldRouter} />
           </Switch>
     );
   }
