@@ -10,15 +10,18 @@ class Form1 extends Component {
       ingredient: "",
       selectedDepartment: ""
     };
+    
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSelect = this.handleSelect.bind(this);
   }
+  
   handleChange(e) {
     this.setState({
       ingredient: e.target.value
     });
   }
+  
   handleSubmit(e) {
     let obj = {
       ingredient: this.state.ingredient,
@@ -28,15 +31,18 @@ class Form1 extends Component {
     console.log(obj);
     e.preventDefault();
   }
+  
   handleSelect(department) {
     this.setState({
       selectedDepartment: department
     });
   }
-  //TODO Query for DB
+  
+  //@TODO Query for DB
   updateDB(){
 
   }
+  
   render() {
     return (
       <div>
