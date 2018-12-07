@@ -42,4 +42,13 @@ const getListOfIngredients = () => {
     return item.name
   })
 }
-export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments, getGroceryByName, getListOfIngredients }
+export {  
+  getGroceryById,
+  getIngredients,
+  getAllIngredients,
+  getGroceryLists,
+  getUsers,
+  getDepartments,
+  getGroceryByName,
+  getListOfIngredients 
+}
