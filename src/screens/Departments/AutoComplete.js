@@ -9,7 +9,7 @@ import React, { Component } from 'react';
       suggestions: []
     }
   }
-  
+
   onChange = e => {
     e.preventDefault();
     const value = e.target.value;
@@ -22,7 +22,13 @@ import React, { Component } from 'react';
   }
 
   selected = (item) => {
-    this.setState({text: item})
+    if (this.props.onSelect != undefined){
+      this.props.onSelect(item);
+    }
+    this.setState({
+      text: item,
+      suggestions: []
+    })
   }
 
   showSuggestions = () => {

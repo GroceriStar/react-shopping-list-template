@@ -36,4 +36,10 @@ const getDepartments = (all = true) => {
 const getGroceryByName = (groceryName) => {
   return groceristar.getGroceryByName(groceryName);
 }
-export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments, getGroceryByName }
+
+const getListOfIngredients = () => {
+  return groceristar.getIngredients().map(function(item){
+    return item.name
+  })
+}
+export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments, getGroceryByName, getListOfIngredients }
