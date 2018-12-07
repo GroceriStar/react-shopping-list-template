@@ -3,7 +3,7 @@ import shortid from "shortid";
 
 class Selectbox extends Component {
   handleChange(e) {
-    this.props.onSelectDepartment(e.target.value);
+    this.props.onSelect(e.target.value);
   }
 
   render() {

@@ -47,7 +47,7 @@ class Form1 extends Component {
           <br />
           <Selectbox
             selectedValue={this.state.selectedDepartment}
-            onSelectDepartment={this.handleSelect}
+            onSelect={this.handleSelect}
             data={getDepartments(true)}
           />
           <br />

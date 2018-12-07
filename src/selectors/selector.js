@@ -33,4 +33,7 @@ const getDepartments = (all = true) => {
   return groceristar.getDepartments();
 }
 
-export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments }
+const getGroceryByName = (groceryName) => {
+  return groceristar.getGroceryByName(groceryName);
+}
+export { getGroceryById, getIngredients, getAllIngredients, getGroceryLists, getUsers, getDepartments, getGroceryByName }
