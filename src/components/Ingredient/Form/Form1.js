@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Selectbox from "../Selectbox";
-import { groceristar } from "@groceristar/groceristar-fetch";
+import Selectbox            from "../Selectbox";
+import { getDepartments }   from "../../../selectors/selector";
 
 class Form1 extends Component {
   constructor(props) {
@@ -43,7 +43,7 @@ class Form1 extends Component {
           <Selectbox
             selectedValue={this.state.selectedDepartment}
             onSelectDepartment={this.handleSelect}
-            data={groceristar.getAllDepartments()}
+            data={getDepartments(true)}
           />
           <br />
           <input type="Submit" />
