@@ -24,6 +24,7 @@ class Form1 extends Component {
       ingredient: this.state.ingredient,
       department: this.state.selectedDepartment
     };
+    this.updateDB();
     console.log(obj);
     e.preventDefault();
   }
@@ -31,6 +32,10 @@ class Form1 extends Component {
     this.setState({
       selectedDepartment: department
     });
+  }
+  //TODO Query for DB
+  updateDB(){
+
   }
   render() {
     return (
