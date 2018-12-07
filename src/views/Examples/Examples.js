@@ -13,6 +13,7 @@ import Selectbox from "../../components/Ingredient/Selectbox";
 import Status from "../../components/Ingredient/Status";
 import TextId from "../../components/Ingredient/TextId";
 import Form1 from "../../components/Ingredient/Form/Form1";
+import Form2 from "../../components/Ingredient/Form/Form2";
 
 import Title from "../../screens/Departments/Title";
 import AutoComplete from "../../screens/Departments/AutoComplete";
@@ -69,8 +70,11 @@ class Examples extends Component {
         <h3>Forms</h3>
         <h3>Form1</h3>
         <Form1 />
-
-        <Title id="123">Title with id</Title>
+        <hr />
+        <h3>Form2</h3>
+        <Form2 />
+        <hr />
+        <br/><Title id="123">Title with id</Title>
 
         <Title>AutoComplete</Title>
         <AutoComplete data={["a", "aa", "aaa", "b", "bb", "c", "cc"]} />
