@@ -1159,10 +1159,10 @@ ant-design-palettes@^1.1.3:
   dependencies:
     tinycolor2 "^1.4.1"
 
-antd@^3.11.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.11.0.tgz#e9ff4e37bd1301bb085730e26a38e633270a38f1"
-  integrity sha512-K5gvVOwKNrWVAapfiGpdq8bopXIZCliKbsDuxI/ro/TAY+fPBocZvk9NCFQZxbPw2zfS2TOnvc7AQqe+ILt5IA==
+antd@^3.11.1:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.11.1.tgz#0fe0873b1e5c101f5bd53e9bbbb31a8fdd16ca5f"
+  integrity sha512-uV6LJO0e+3kbaeh4yvMxXPbZWUA0kWebdDeRFfoVB6fQX11SpT+2nspRGlFGowYJSQEaTN5fBAmdKbu2mo86zA==
   dependencies:
     "@ant-design/icons" "~1.1.15"
     "@ant-design/icons-react" "~1.1.2"
@@ -1189,8 +1189,8 @@ antd@^3.11.0:
     rc-drawer "~1.7.6"
     rc-dropdown "~2.2.1"
     rc-editor-mention "^1.1.7"
-    rc-form "^2.2.3"
-    rc-input-number "~4.3.0"
+    rc-form "^2.2.7"
+    rc-input-number "~4.3.7"
     rc-menu "~7.4.12"
     rc-notification "~3.3.0"
     rc-pagination "~1.17.3"
@@ -7665,9 +7665,10 @@ rc-editor-mention@^1.1.7:
     rc-animate "^2.3.0"
     rc-editor-core "~0.8.3"
 
-rc-form@^2.2.3:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/rc-form/-/rc-form-2.2.6.tgz#737bd1eb1f45c6ce821854e86248e145adb6230c"
+rc-form@^2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/rc-form/-/rc-form-2.2.7.tgz#8880851b9cd4a9c911f5272c91db73978a72377d"
+  integrity sha512-50zIXXa+QzssgZZQx5OwGFbELr99d0sCZYVo1SIXS216ioWnFefzbFs+iofTCir+YbTCQHh/cxqXDdC6r6HvYg==
   dependencies:
     async-validator "~1.8.5"
     babel-runtime "6.x"
@@ -7685,9 +7686,10 @@ rc-hammerjs@~0.6.0:
     hammerjs "^2.0.8"
     prop-types "^15.5.9"
 
-rc-input-number@~4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/rc-input-number/-/rc-input-number-4.3.0.tgz#240638cbfab481b4c3da11a633456c75b49d030b"
+rc-input-number@~4.3.7:
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/rc-input-number/-/rc-input-number-4.3.7.tgz#5c11a2015812c414492d8f0408ef04bb48fd6e1c"
+  integrity sha512-uIrUSJ3mURDBIcoBE3Suq6hvO7OyfNJHLeai0xN2hXMxOkR9ePH4B/RbiqNjMPflmj6/fxbtK5odOXqVV7BemQ==
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.0"
