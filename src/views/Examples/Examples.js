@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import SimpleText from "../../components/Ingredient/SimpleText";
 import Checkbox from "../../components/Ingredient/Checkbox";
@@ -28,6 +28,8 @@ class Examples extends Component {
   render() {
     var id = 12345;
     var id1 = 1234;
+    let items = ["apple", "milk"];
+    var text1 = 'Car';
     return (
       <div>
         <h3>SimpleText</h3>
@@ -82,13 +84,8 @@ class Examples extends Component {
         <hr />
         <h3>List</h3>
         <TodaysDate />
-      
-      {/*<List items={["One", "Two", "Three", "Apple"]} renderItem={"Two"}/>
+
         <DefaultList items={["One", "Two", "Three", "Apple"]} renderItem={"One"}/>
-      */}
-      <DefaultList items={["One", "Two", "Three", "Apple"]} />
-      
-      
         <hr />
         <br />
         <br/><Title id="123">Title with id</Title>
