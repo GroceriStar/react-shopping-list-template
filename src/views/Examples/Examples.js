@@ -22,6 +22,8 @@ import ListItemLink from "../../screens/Departments/ListItemLink";
 import ListItemEdit from "../../screens/Departments/ListItemEdit";
 import ListItemDelete from "../../screens/Departments/ListItemDelete";
 
+import { DefaultList, List, TodaysDate } from "@groceristar/grocery-component";
+
 class Examples extends Component {
   render() {
     var id = 12345;
@@ -78,7 +80,12 @@ class Examples extends Component {
         <h3>Form3</h3>
         <Form3 />
         <hr />
-        
+        <h3>List</h3>
+        <TodaysDate />
+        <List items={["One", "Two", "Three", "Apple"]} renderItem={"Two"}/>
+        <DefaultList items={["One", "Two", "Three", "Apple"]} renderItem={"One"}/>
+        <hr />
+        <br />
         <br/><Title id="123">Title with id</Title>
 
         <Title>AutoComplete</Title>
