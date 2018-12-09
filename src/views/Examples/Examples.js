@@ -82,8 +82,13 @@ class Examples extends Component {
         <hr />
         <h3>List</h3>
         <TodaysDate />
-        <List items={["One", "Two", "Three", "Apple"]} renderItem={"Two"}/>
+      
+      {/*<List items={["One", "Two", "Three", "Apple"]} renderItem={"Two"}/>
         <DefaultList items={["One", "Two", "Three", "Apple"]} renderItem={"One"}/>
+      */}
+      <DefaultList items={["One", "Two", "Three", "Apple"]} />
+      
+      
         <hr />
         <br />
         <br/><Title id="123">Title with id</Title>
