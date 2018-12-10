@@ -22,7 +22,7 @@ import ListItemLink from "../../screens/Departments/ListItemLink";
 import ListItemEdit from "../../screens/Departments/ListItemEdit";
 import ListItemDelete from "../../screens/Departments/ListItemDelete";
 
-import { DefaultList, List, TodaysDate } from "@groceristar/grocery-component";
+import { DefaultList } from "@groceristar/grocery-component";
 
 class Examples extends Component {
   render() {
@@ -82,10 +82,9 @@ class Examples extends Component {
         <h3>Form3</h3>
         <Form3 />
         <hr />
-        <h3>List</h3>
-        <TodaysDate />
+        <h3>DefaultList</h3>
 
-        <DefaultList items={["One", "Two", "Three", "Apple"]} renderItem={"One"}/>
+        <DefaultList items={["One", "Two", "Three", "Apple"]}/>
         <hr />
         <br />
         <br/><Title id="123">Title with id</Title>
