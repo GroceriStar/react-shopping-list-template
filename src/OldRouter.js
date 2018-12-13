@@ -36,6 +36,7 @@ class OldRouter extends Component {
           <Route path='/departments' component={Departments} />
           {/* Are we reallly can have exact for a few routes? */}
 
+
           <Route path='/display'     component={DisplayList} exact />
           <Route path='/ingredients' component={Ingredients} exact />
 
