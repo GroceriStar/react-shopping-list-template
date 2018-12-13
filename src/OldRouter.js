@@ -6,13 +6,14 @@ import {
   Route
 } from 'react-router-dom';
 
-
+// @TODO - we trying to get rid of screens approach.
+// we should use views instead
 
 import Home        from './views/Home/Home';
 import Profile     from './views/Profile/Profile';
 import New         from './views/New/New';
 import List        from './screens/List/List';
-import DisplayList from './screens/DisplayList/DisplayList';
+import DisplayList from './views/DisplayList/DisplayList';
 import Departments from './screens/Departments/Departments';
 import Ingredients from './screens/Ingredients/Ingredients';
 import Examples    from './views/Examples/Examples';
