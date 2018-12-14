@@ -11,7 +11,8 @@ import _ from 'lodash';
 import {
 	getIngredients,
 	getGroceryById
-} from "../../selectors/selector.js";
+} from "../selectors/selector"
+  // "../../selectors/selector.js";
 
 
 class DisplayList extends Component {

@@ -4,7 +4,7 @@ class Shoplist extends Component {
     render() {
         return (
             <div>
-              Shoplist route
+              Shoplist component that show that our route is working
             </div>
         );
     }
