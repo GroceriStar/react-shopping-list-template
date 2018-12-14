@@ -8,12 +8,12 @@ import {
 // @TODO instead of screens we'll use views folder soon.
 
 //
-import Home        from './screens/Home/Home';
+// import Home        from './screens/Home/Home';
 
-// import New         from './screens/New/New';
-// import List        from './screens/List/List';
+// import New         from './views/New/New';
+// import List        from './views/List/List';
 
-// import Departments from './screens/Departments/Departments';
+// import Departments from './views/Departments/Departments';
 
 
 
@@ -26,7 +26,7 @@ class GroceryRouter extends Component {
     return (
           <Fragment>
           {/*
-            <Route path='/view/grocery/:groceryId'            component={Home} exact />
+            <Route path='/view/grocery/:groceryId'    component={Home} exact />
             <Route path='/view/ultimategrocery'     component={Component} />
             <Route path='/view/collection/groceries'         component={Component} />
             <Route path='/view/grocery/hidden/:groceryId'        component={Component} />
