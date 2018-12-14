@@ -14,7 +14,6 @@ import Profile     from './views/Profile/Profile';
 import New         from './views/New/New';
 import List        from './screens/List/List';
 
-import DisplayList from './views/DisplayList/DisplayList';
 
 import GroceryView from './views/GroceryView/GroceryView';
 
@@ -42,9 +41,8 @@ class OldRouter extends Component {
           {/* Are we reallly can have exact for a few routes? */}
 
 
-          <Route path='/display'     component={DisplayList} exact />
 
-          {/*}<Route path='/display'     component={GroceryView} exact /> */}
+          <Route path='/grocery-example'     component={GroceryView} exact /> 
 
           <Route path='/ingredients' component={Ingredients} exact />
 

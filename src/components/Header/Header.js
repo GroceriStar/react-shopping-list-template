@@ -13,7 +13,7 @@ const menu = [
   ['/', 'Home'],
   ['/profile', 'Profile'],
   ['/new', 'Create New Grocery'],
-  ['/display', 'View Details of Grocery List'],
+  ['/grocery-example', 'View Details of Grocery List'],
   ['/departments', 'Departments']
 
 ];
@@ -42,7 +42,7 @@ class Header extends Component {
                         </li>
 
                         <li>
-                          <Link to='/display'>
+                          <Link to='/grocery-example'>
                             View Details of Grocery List
                           </Link>
                         </li>

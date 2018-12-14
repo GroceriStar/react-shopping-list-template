@@ -42,7 +42,12 @@ const getListOfIngredients = () => {
     return item.name
   })
 }
-export {  
+
+function getGroceryCollection(){
+  return groceristar.getGroceryShowcase();
+}
+
+export {
   getGroceryById,
   getIngredients,
   getAllIngredients,
@@ -50,5 +55,6 @@ export {
   getUsers,
   getDepartments,
   getGroceryByName,
-  getListOfIngredients 
+  getListOfIngredients,
+  getGroceryCollection
 }

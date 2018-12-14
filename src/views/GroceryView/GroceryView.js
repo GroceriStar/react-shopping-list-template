@@ -3,7 +3,9 @@
 
 import React, { Component, Fragment } from 'react';
 
-import { getGroceryCollection } from "./../selectors/selector.js";
+import GroceryList from '../../components/GroceryList/GroceryList';
+
+import { getGroceryCollection, getGroceryById } from "../../selectors/selector.js";
 
 
 
@@ -27,7 +29,7 @@ class GroceryView extends Component {
 
     return (
       <Fragment>
-
+      <GroceryList items={getGroceryById(3)} />
       </Fragment>
     );
   }

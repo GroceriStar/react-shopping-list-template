@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+
 
 // @TODO update it!!!!
 // this file is a just copy-paste from showcase project:
@@ -61,7 +61,9 @@ const RenderItem = ({ data, id }) => {
   return (
     <Fragment>
       ID: {data.id}
+      <br />
       Name: {data.name}
+      <br />
       <pre>
       {data.departments}
       </pre>
