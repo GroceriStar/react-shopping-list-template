@@ -93,7 +93,10 @@ class Examples extends Component {
         <AutoComplete data={["a", "aa", "aaa", "b", "bb", "c", "cc"]} />
         <hr />
         <Title>List Item with link</Title>
-        <ListItemLink list={["one", "two", "three"]} />
+        <ListItemLink list={[{name: "One",
+                              subList: ["One.One","One.Two"]}, {name: "Two",
+                                                    subList: ["Two.One","Two.Two"]}, {name: "Three",
+                                                                          subList: ["Three.One","Three.Two"]}]} />
         <hr />
         <Title>List Item Edit</Title>
         <ListItemEdit list={["one", "two", "three"]} />
