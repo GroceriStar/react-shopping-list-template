@@ -10,7 +10,7 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "raven-js": "^3.27.0",
-    "react": "^16.6.3",
+    "react": "^16.7.0",
     "react-dom": "^16.6.3",
     "react-final-form": "^4.0.2",
     "react-router-config": "^4.4.0-beta.6",
