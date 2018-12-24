@@ -18,6 +18,8 @@ import Form3 from "../../components/Ingredient/Form/Form3";
 
 import Title from "../../screens/Departments/Title";
 import AutoComplete from "../../screens/Departments/AutoComplete";
+import AntdAutoComplete from "../../screens/Departments/AntdAutoComplete";
+
 import ListItemLink from "../../screens/Departments/ListItemLink";
 import ListItemEdit from "../../screens/Departments/ListItemEdit";
 import ListItemDelete from "../../screens/Departments/ListItemDelete";
@@ -92,6 +94,10 @@ class Examples extends Component {
         <Title>AutoComplete</Title>
         <AutoComplete data={["a", "aa", "aaa", "b", "bb", "c", "cc"]} />
         <hr />
+
+        <AntdAutoComplete data={["a", "aa", "aaa", "b", "bb", "c", "cc"]} />
+        <hr />
+        <br />
         <Title>List Item with link</Title>
         <ListItemLink list={[{name: "One",
                               subList: ["One.One","One.Two"]}, {name: "Two",

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SimpleText extends Component {
+class TextId extends Component {
     render() {
         return (
             <p id={this.props.id}>{this.props.children}</p>
@@ -8,4 +8,4 @@ class SimpleText extends Component {
     }
 }
 
-export default SimpleText;
+export default TextId;
