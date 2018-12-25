@@ -1,28 +1,31 @@
 import React, { Component, Fragment } from "react";
 
-import SimpleText from "../../components/Ingredient/SimpleText";
-import Checkbox from "../../components/Ingredient/Checkbox";
-import DeleteLink from "../../components/Ingredient/DeleteLink";
-import EditableLabel from "../../components/Ingredient/EditableLabel";
-import EditLink from "../../components/Ingredient/EditLink";
-import Id from "../../components/Ingredient/Id";
-import Label from "../../components/Ingredient/Label";
-import ListItem from "../../components/Ingredient/ListItem";
-import Order from "../../components/Ingredient/Order";
-import Selectbox from "../../components/Ingredient/Selectbox";
-import Status from "../../components/Ingredient/Status";
-import TextId from "../../components/Ingredient/TextId";
-import Form1 from "../../components/Ingredient/Form/Form1";
-import Form2 from "../../components/Ingredient/Form/Form2";
-import Form3 from "../../components/Ingredient/Form/Form3";
+import SimpleText     from "../../components/Ingredient/SimpleText";
+import Checkbox       from "../../components/Ingredient/Checkbox";
+import DeleteLink     from "../../components/Ingredient/DeleteLink";
+import EditableLabel  from "../../components/Ingredient/EditableLabel";
+import EditLink       from "../../components/Ingredient/EditLink";
+import Id             from "../../components/Ingredient/Id";
+import Label          from "../../components/Ingredient/Label";
+import ListItem       from "../../components/Ingredient/ListItem";
+import Order          from "../../components/Ingredient/Order";
+import Selectbox      from "../../components/Ingredient/Selectbox";
+import Status         from "../../components/Ingredient/Status";
+import TextId         from "../../components/Ingredient/TextId";
+import Form1          from "../../components/Ingredient/Form/Form1";
+import Form2          from "../../components/Ingredient/Form/Form2";
+import Form3          from "../../components/Ingredient/Form/Form3";
 
-import Title from "../../screens/Departments/Title";
-import AutoComplete from "../../screens/Departments/AutoComplete";
+import Title          from "../../screens/Departments/Title";
+import AutoComplete   from "../../screens/Departments/AutoComplete";
 import AntdAutoComplete from "../../screens/Departments/AntdAutoComplete";
 
-import ListItemLink from "../../screens/Departments/ListItemLink";
-import ListItemEdit from "../../screens/Departments/ListItemEdit";
+import ListItemLink   from "../../screens/Departments/ListItemLink";
+import ListItemEdit   from "../../screens/Departments/ListItemEdit";
 import ListItemDelete from "../../screens/Departments/ListItemDelete";
+
+import IngredientsList from "../../screens/List/IngredientsList";
+import { getAllIngredients } from "../../selectors/selector";
 
 import { DefaultList } from "@groceristar/grocery-component";
 
@@ -84,8 +87,13 @@ class Examples extends Component {
         <h3>Form3</h3>
         <Form3 />
         <hr />
-        <h3>DefaultList</h3>
+          <hr />
+        <br />
+        <h3>Lists</h3>
+        <h3>IngredientsList</h3>
+        <IngredientsList ingredients={getAllIngredients().slice(0,15)}/>
 
+        <h3>DefaultList</h3>
         <DefaultList items={["One", "Two", "Three", "Apple"]}/>
         <hr />
         <br />
