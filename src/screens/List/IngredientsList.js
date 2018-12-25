@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
 
-import { getIngredients,
-  getGroceryLists,
-  getUsers,
-  getDepartments,
-  getAllIngredients
-} from "../../selectors/selector.js";
-
 import ListItem from "../../components/Ingredient/ListItem";
 
 class IngredientsList extends Component {
@@ -15,8 +8,8 @@ class IngredientsList extends Component {
     item.name
   )
   }
+
   render() {
-    console.log(this.props.ingredients);
     return (
     <ListItem data={this.getIngredientsName(this.props.ingredients)}/>
     );

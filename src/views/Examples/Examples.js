@@ -25,6 +25,7 @@ import ListItemEdit   from "../../screens/Departments/ListItemEdit";
 import ListItemDelete from "../../screens/Departments/ListItemDelete";
 
 import IngredientsList from "../../screens/List/IngredientsList";
+import ListCheckbox   from "../../screens/List/ListCheckbox";
 import { getAllIngredients } from "../../selectors/selector";
 
 import { DefaultList } from "@groceristar/grocery-component";
@@ -92,6 +93,9 @@ class Examples extends Component {
         <h3>Lists</h3>
         <h3>IngredientsList</h3>
         <IngredientsList ingredients={getAllIngredients().slice(0,15)}/>
+
+        <h3>ListCheckbox</h3>
+        <ListCheckbox data={["One", "Two", "Three", "Apple"]} />
 
         <h3>DefaultList</h3>
         <DefaultList items={["One", "Two", "Three", "Apple"]}/>
