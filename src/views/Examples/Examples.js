@@ -28,7 +28,7 @@ import ListItemDelete from "../../screens/Departments/ListItemDelete";
 
 import IngredientsList from "../../screens/List/IngredientsList";
 import ListCheckbox   from "../../screens/List/ListCheckbox";
-import { getAllIngredients } from "../../selectors/selector";
+import { getAllIngredients, getDepartments } from "../../selectors/selector";
 
 import { DefaultList } from "@groceristar/grocery-component";
 
@@ -41,7 +41,8 @@ class Examples extends Component {
     return (
       <div>
         <DragDropContextProvider backend={ReactDnDHTML5Backend}>
-        <SortableList />
+          <h3>Departments</h3>
+        <SortableList data={getDepartments(true)}/>
         </DragDropContextProvider>
         <br/>
         <br/>
