@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-
+import { DragDropContextProvider } from 'react-dnd'
+import ReactDnDHTML5Backend from "react-dnd-html5-backend";
 import SimpleText     from "../../components/Ingredient/SimpleText";
 import Checkbox       from "../../components/Ingredient/Checkbox";
 import DeleteLink     from "../../components/Ingredient/DeleteLink";
@@ -15,6 +16,7 @@ import TextId         from "../../components/Ingredient/TextId";
 import Form1          from "../../components/Ingredient/Form/Form1";
 import Form2          from "../../components/Ingredient/Form/Form2";
 import Form3          from "../../components/Ingredient/Form/Form3";
+import SortableList   from "../../components/SortableList/SortableList";
 
 import Title          from "../../screens/Departments/Title";
 import AutoComplete   from "../../screens/Departments/AutoComplete";
@@ -38,6 +40,11 @@ class Examples extends Component {
     var text1 = 'Car';
     return (
       <div>
+        <DragDropContextProvider backend={ReactDnDHTML5Backend}>
+        <SortableList />
+        </DragDropContextProvider>
+        <br/>
+        <br/>
         <h3>SimpleText</h3>
         <SimpleText>This is SimpleText</SimpleText>
         <hr />

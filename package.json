@@ -11,6 +11,8 @@
     "lodash": "^4.17.11",
     "raven-js": "^3.27.0",
     "react": "^16.7.0",
+    "react-dnd": "^7.0.2",
+    "react-dnd-html5-backend": "^7.0.2",
     "react-dom": "^16.7.0",
     "react-final-form": "^4.0.2",
     "react-router-config": "^4.4.0-beta.6",
