@@ -30,6 +30,8 @@ import ListItemDelete from "../../screens/Departments/ListItemDelete";
 import IngredientsList from "../../screens/List/IngredientsList";
 import ListCheckbox   from "../../screens/List/ListCheckbox";
 import ListCheckboxDeleteLink   from "../../screens/List/ListCheckboxDeleteLink";
+import ListCheckboxDeleteIcon   from "../../screens/List/ListCheckboxDeleteIcon";
+
 import { getAllIngredients, getDepartments } from "../../selectors/selector";
 
 import { DefaultList } from "@groceristar/grocery-component";
@@ -123,6 +125,9 @@ class Examples extends Component {
 
         <h3>ListCheckboxDeleteLink</h3>
         <ListCheckboxDeleteLink data={["One", "Two", "Three", "Apple"]} />
+
+        <h3>ListCheckboxDeleteIcon</h3>
+        <ListCheckboxDeleteIcon data={["One", "Two", "Three", "Apple"]} />
 
         <h3>DefaultList</h3>
         <DefaultList items={["One", "Two", "Three", "Apple"]}/>
