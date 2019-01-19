@@ -31,6 +31,8 @@ import IngredientsList from "../../screens/List/IngredientsList";
 import ListCheckbox   from "../../screens/List/ListCheckbox";
 import ListCheckboxDeleteLink   from "../../screens/List/ListCheckboxDeleteLink";
 import ListCheckboxDeleteIcon   from "../../screens/List/ListCheckboxDeleteIcon";
+import ListCheckboxStatus   from "../../screens/List/ListCheckboxStatus";
+
 
 import { getAllIngredients, getDepartments } from "../../selectors/selector";
 
@@ -44,6 +46,7 @@ class Examples extends Component {
     var text1 = 'Car';
     return (
       <div>
+
         {/* <DragDropContextProvider backend={ReactDnDHTML5Backend}>
           <h3>Departments</h3>
         <SortableList>
@@ -128,6 +131,9 @@ class Examples extends Component {
 
         <h3>ListCheckboxDeleteIcon</h3>
         <ListCheckboxDeleteIcon data={["One", "Two", "Three", "Apple"]} />
+
+        <h3>ListCheckboxStatus</h3>
+        <ListCheckboxStatus data={["One", "Two", "Three", "Apple"]} />
 
         <h3>DefaultList</h3>
         <DefaultList items={["One", "Two", "Three", "Apple"]}/>
