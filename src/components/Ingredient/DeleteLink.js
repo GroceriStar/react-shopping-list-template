@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import shortid from "shortid";
 
-class EditLink extends Component {
+class DeleteLink extends Component {
   constructor(props){
     super(props)
 
@@ -35,4 +35,4 @@ class EditLink extends Component {
     }
 }
 
-export default EditLink;
+export default DeleteLink;

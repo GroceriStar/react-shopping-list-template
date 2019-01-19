@@ -4,7 +4,7 @@ class Checkbox extends Component {
     render() {
         return (
               <label>
-            <input type="checkbox" name={this.props.children} />
+            <input type="checkbox" name={this.props.name} />
             {this.props.children}
             </label>
         );
