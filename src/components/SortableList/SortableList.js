@@ -91,12 +91,7 @@ class SortableList extends React.Component {
   }
 
   render() {
-    const cards  = this.props.data.map((item, index) => ({
-        id: `--${index}`,
-        title: item,
-        color: "success"
-
-    }));
+    const cards  = this.props.children;
     return (
       <div className="offset-2 col-8">
         { cards.map((card, i) => (

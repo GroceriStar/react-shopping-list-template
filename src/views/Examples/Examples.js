@@ -42,7 +42,21 @@ class Examples extends Component {
       <div>
         <DragDropContextProvider backend={ReactDnDHTML5Backend}>
           <h3>Departments</h3>
-        <SortableList data={getDepartments(true)}/>
+        <SortableList>
+          { getDepartments(true).map((item, index) => ({
+              id: `--${index}`,
+              title: item,
+              color: "success"
+          }))}
+        </SortableList>
+        <h3>Ingredients</h3>
+        <SortableList>
+          { getAllIngredients().map((item, index) => ({
+              id: `--${index}`,
+              title: `${item.name} - ${item.department}`,
+              color: "success"
+          }))}
+        </SortableList>
         </DragDropContextProvider>
         <br/>
         <br/>
