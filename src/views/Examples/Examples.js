@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { DragDropContextProvider } from 'react-dnd'
 import ReactDnDHTML5Backend from "react-dnd-html5-backend";
+
 import SimpleText     from "../../components/Ingredient/SimpleText";
 import Checkbox       from "../../components/Ingredient/Checkbox";
 import DeleteLink     from "../../components/Ingredient/DeleteLink";
@@ -28,6 +29,11 @@ import ListItemDelete from "../../screens/Departments/ListItemDelete";
 
 import IngredientsList from "../../screens/List/IngredientsList";
 import ListCheckbox   from "../../screens/List/ListCheckbox";
+import ListCheckboxDeleteLink   from "../../screens/List/ListCheckboxDeleteLink";
+import ListCheckboxDeleteIcon   from "../../screens/List/ListCheckboxDeleteIcon";
+import ListCheckboxStatus   from "../../screens/List/ListCheckboxStatus";
+
+
 import { getAllIngredients, getDepartments } from "../../selectors/selector";
 
 import { DefaultList } from "@groceristar/grocery-component";
@@ -40,7 +46,8 @@ class Examples extends Component {
     var text1 = 'Car';
     return (
       <div>
-        <DragDropContextProvider backend={ReactDnDHTML5Backend}>
+
+        {/* <DragDropContextProvider backend={ReactDnDHTML5Backend}>
           <h3>Departments</h3>
         <SortableList>
           { getDepartments(true).map((item, index) => ({
@@ -57,14 +64,14 @@ class Examples extends Component {
               color: "success"
           }))}
         </SortableList>
-        </DragDropContextProvider>
+        </DragDropContextProvider> */}
         <br/>
         <br/>
         <h3>SimpleText</h3>
         <SimpleText>This is SimpleText</SimpleText>
         <hr />
         <h3>Checkbox</h3>
-        <Checkbox>Check</Checkbox>
+        <Checkbox name={"Check"}>Check</Checkbox>
         <hr />
         <h3>DeleteLink</h3>
         <DeleteLink id={id} url={"/examples/delete/" + id}>
@@ -118,6 +125,15 @@ class Examples extends Component {
 
         <h3>ListCheckbox</h3>
         <ListCheckbox data={["One", "Two", "Three", "Apple"]} />
+
+        <h3>ListCheckboxDeleteLink</h3>
+        <ListCheckboxDeleteLink data={["One", "Two", "Three", "Apple"]} />
+
+        <h3>ListCheckboxDeleteIcon</h3>
+        <ListCheckboxDeleteIcon data={["One", "Two", "Three", "Apple"]} />
+
+        <h3>ListCheckboxStatus</h3>
+        <ListCheckboxStatus data={["One", "Two", "Three", "Apple"]} />
 
         <h3>DefaultList</h3>
         <DefaultList items={["One", "Two", "Three", "Apple"]}/>

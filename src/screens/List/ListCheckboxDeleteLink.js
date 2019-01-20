@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Checkbox from "../../components/Ingredient/Checkbox";
+import DeleteLink     from "../../components/Ingredient/DeleteLink";
 import shortid from "shortid";
 
-class ListCheckbox extends Component {
+class ListCheckboxDeleteLink extends Component {
 
   render() {
     return (
@@ -13,12 +15,16 @@ class ListCheckbox extends Component {
           <li key={shortid.generate()}
               id={shortid.generate()}>
             <Checkbox name={item}>
-              {item}
-            </Checkbox></li>
-          ))}
+              <DeleteLink id={index} url={"/examples/delete/" + index}>
+                {item}
+              </DeleteLink>
+            </Checkbox>
+          </li>
+        ))
+          }
       </ul>
     );
   }
 }
 
-export default ListCheckbox;
+export default ListCheckboxDeleteLink;
