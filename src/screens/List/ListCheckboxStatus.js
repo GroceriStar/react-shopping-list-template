@@ -35,7 +35,7 @@ class ListCheckboxStatus extends React.Component {
       <ul style = {{"list-style-type": "none"}}>
           {this.props.data.map(
             (item, index) =>(
-          <li>
+          <li id={shortid.generate()}>
             <Checkbox name={item} onAddItemStatus={this.onAddItemStatus}
                                   onDeleteItemStatus={this.onDeleteItemStatus}>
               {item}
