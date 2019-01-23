@@ -4,7 +4,7 @@ import Checkbox from "../../components/Ingredient/Checkbox";
 import shortid from "shortid";
 import { Link } from 'react-router-dom';
 
-class ListCheckbox extends Component {
+class List3Links extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -54,4 +54,4 @@ class ListCheckbox extends Component {
   }
 }
 
-export default ListCheckbox;
+export default List3Links;
