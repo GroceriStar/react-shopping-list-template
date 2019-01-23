@@ -32,7 +32,7 @@ import ListCheckbox   from "../../screens/List/ListCheckbox";
 import ListCheckboxDeleteLink   from "../../screens/List/ListCheckboxDeleteLink";
 import ListCheckboxDeleteIcon   from "../../screens/List/ListCheckboxDeleteIcon";
 import ListCheckboxStatus   from "../../screens/List/ListCheckboxStatus";
-
+import List3Links   from "../../screens/List/List3Links";
 
 import { getAllIngredients, getDepartments } from "../../selectors/selector";
 
@@ -120,6 +120,16 @@ class Examples extends Component {
           <hr />
         <br />
         <h3>Lists</h3>
+
+        <h3>List3Links</h3>
+        <List3Links data={
+          [{name: "all",
+            status: "all"},
+          {name:"active",
+            status: "active",},
+          {name: "purchased",
+          status: "purchased"}]}/>
+
         <h3>IngredientsList</h3>
         <IngredientsList ingredients={getAllIngredients().slice(0,15)}/>
 
