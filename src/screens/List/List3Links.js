@@ -8,8 +8,11 @@ class List3Links extends Component {
   constructor(props){
     super(props);
     this.state = {
-      status: 'all'
+      status: 'all',
+      checkedItems: ''
     }
+    this.onAddItemStatus = this.onAddItemStatus.bind(this);
+    this.onDeleteItemStatus = this.onDeleteItemStatus.bind(this);
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -36,20 +39,54 @@ class List3Links extends Component {
     }
   }
 
+  onAddItemStatus(item){
+    this.setState({
+      checkedItems: [...this.state.checkedItems, item]
+    })
+  }
+
+  onDeleteItemStatus(item){
+    if(this.state.checkedItems != undefined ){
+    let tmp = this.state.checkedItems;
+    tmp.splice(tmp.indexOf(item))
+    this.setState({
+      checkedItems: tmp
+    })
+  }
+  }
+
   render() {
+
     return (
-      <ul style = {{"list-style-type": "none"}}>
-          {this.props.data.map(
-            (item, index) =>(
-              <li id={shortid.generate()}>
-                <Link to="/examples"
-                onClick={this.handleClick}
-                name={item.status}>
-                  {item.name}
-                </Link>
-              </li>
-          ))}
-      </ul>
+      <div>
+        <ul style = {{"list-style-type": "none"}}>
+            {this.props.data.map(
+              (item, index) =>(
+            <li id={shortid.generate()}>
+              <Checkbox name={item} onAddItemStatus={this.onAddItemStatus}
+                                    onDeleteItemStatus={this.onDeleteItemStatus}>
+                {item}
+              </Checkbox>
+           </li>
+            ))}
+        </ul>
+
+        <Link to="/examples"
+        onClick={this.handleClick}
+        name={"all"}>
+          All
+        </Link>
+        <Link to="/examples"
+        onClick={this.handleClick}
+        name={"active"}>
+          Active
+        </Link>
+        <Link to="/examples"
+        onClick={this.handleClick}
+        name={"purchased"}>
+          Purchased
+        </Link>
+      </div>
     );
   }
 }

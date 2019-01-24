@@ -126,13 +126,7 @@ class Examples extends Component {
         <ListLayouts data={["One", "Two", "Three", "Apple"]} layout="ListItemEdit"/>
 
         <h3>List3Links</h3>
-        <List3Links data={
-          [{name: "all",
-            status: "all"},
-          {name:"active",
-            status: "active",},
-          {name: "purchased",
-          status: "purchased"}]}/>
+        <List3Links data={["One", "Two", "Three", "Apple"]}/>
 
         <h3>IngredientsList</h3>
         <IngredientsList ingredients={getAllIngredients().slice(0,15)}/>
