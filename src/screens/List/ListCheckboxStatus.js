@@ -10,17 +10,17 @@ class ListCheckboxStatus extends React.Component {
       status:[]
     }
 
-    this.onAddItemStatus = this.onAddItemStatus.bind(this);
-    this.onDeleteItemStatus = this.onDeleteItemStatus.bind(this);
+    this.onAddItem = this.onAddItem.bind(this);
+    this.onDeleteItem = this.onDeleteItem.bind(this);
   }
 
-  onAddItemStatus(item){
+  onAddItem(item){
     this.setState({
       status: [...this.state.status, item]
     })
   }
 
-  onDeleteItemStatus(item){
+  onDeleteItem(item){
     if(this.state.status != undefined ){
     let tmp = this.state.status;
     tmp.splice(tmp.indexOf(item))
@@ -36,8 +36,8 @@ class ListCheckboxStatus extends React.Component {
           {this.props.data.map(
             (item, index) =>(
           <li id={shortid.generate()}>
-            <Checkbox name={item} onAddItemStatus={this.onAddItemStatus}
-                                  onDeleteItemStatus={this.onDeleteItemStatus}>
+            <Checkbox name={item} onAddItem={this.onAddItem}
+                                  onDeleteItem={this.onDeleteItem}>
               {item}
             </Checkbox>
          </li>

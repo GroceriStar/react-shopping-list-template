@@ -45,6 +45,27 @@ class Examples extends Component {
     var id1 = 1234;
     let items = ["apple", "milk"];
     var text1 = 'Car';
+    const ingredientsList =
+    [ { key: '20c38e50-1ffb-11e9-ad6b-31f0d6717595',
+    name: 'Asparagus',
+    isChecked: false,
+    departmentID: '20c38e51-1ffb-11e9-ad6b-31f0d6717595',
+    order: 0 },
+  { key: '20c38e52-1ffb-11e9-ad6b-31f0d6717595',
+    name: 'Broccoli',
+    isChecked: true,
+    departmentID: '20c38e53-1ffb-11e9-ad6b-31f0d6717595',
+    order: 0 },
+  { key: '20c38e54-1ffb-11e9-ad6b-31f0d6717595',
+    name: 'Carrots',
+    isChecked: false,
+    departmentID: '20c38e55-1ffb-11e9-ad6b-31f0d6717595',
+    order: 0 },
+  { key: '20c38e56-1ffb-11e9-ad6b-31f0d6717595',
+    name: 'Cauliflower',
+    isChecked: false,
+    departmentID: '20c38e57-1ffb-11e9-ad6b-31f0d6717595',
+    order: 0 },]
     return (
       <div>
 
@@ -126,7 +147,7 @@ class Examples extends Component {
         <ListLayouts data={["One", "Two", "Three", "Apple"]} layout="ListItemEdit"/>
 
         <h3>List3Links</h3>
-        <List3Links data={["One", "Two", "Three", "Apple"]}/>
+        <List3Links data={ingredientsList}/>
 
         <h3>IngredientsList</h3>
         <IngredientsList ingredients={getAllIngredients().slice(0,15)}/>

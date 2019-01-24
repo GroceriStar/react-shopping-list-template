@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import _        from 'lodash';
 import Checkbox from "../../components/Ingredient/Checkbox";
 import shortid from "shortid";
 import { Link } from 'react-router-dom';
@@ -9,10 +9,11 @@ class List3Links extends Component {
     super(props);
     this.state = {
       status: 'all',
-      checkedItems: ''
+      checkedItems: [],
+      list: this.props.data,
     }
-    this.onAddItemStatus = this.onAddItemStatus.bind(this);
-    this.onDeleteItemStatus = this.onDeleteItemStatus.bind(this);
+    this.onAddItem = this.onAddItem.bind(this);
+    this.onDeleteItem = this.onDeleteItem.bind(this);
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -26,9 +27,15 @@ class List3Links extends Component {
       break;
 
       case "active":
+      let result =
+        _.filter(this.state.list, function(item){
+        return !item.isChecked
+      })
         this.setState({
-          status: "active"
+          status: "active",
+          list: result
         });
+        console.log(result);
       break;
 
       case "purchased":
@@ -39,33 +46,46 @@ class List3Links extends Component {
     }
   }
 
-  onAddItemStatus(item){
+  onAddItem(item){
+    let result =
+    _.map(this.state.list, function(obj){
+      if (obj.name === item){
+        return {
+          ...obj,
+          isChecked: true,
+        }
+      }
+      return obj;
+    })
+
+    console.log(result);
     this.setState({
-      checkedItems: [...this.state.checkedItems, item]
+      list: result
     })
   }
 
-  onDeleteItemStatus(item){
-    if(this.state.checkedItems != undefined ){
-    let tmp = this.state.checkedItems;
-    tmp.splice(tmp.indexOf(item))
-    this.setState({
-      checkedItems: tmp
-    })
-  }
+  onDeleteItem(item){
+
+  //   if(this.state.checkedItems != undefined ){
+  //   let tmp = this.state.checkedItems;
+  //   tmp.splice(tmp.indexOf(item))
+  //   this.setState({
+  //     checkedItems: tmp
+  //   })
+  // }
   }
 
   render() {
-
+  console.log(this.state.list);
     return (
       <div>
         <ul style = {{"list-style-type": "none"}}>
-            {this.props.data.map(
+            {this.state.list.map(
               (item, index) =>(
             <li id={shortid.generate()}>
-              <Checkbox name={item} onAddItemStatus={this.onAddItemStatus}
-                                    onDeleteItemStatus={this.onDeleteItemStatus}>
-                {item}
+              <Checkbox name={item.name} isChecked={item.isChecked} onAddItem={this.onAddItem}
+                                    onDeleteItem={this.onDeleteItem}>
+                {item.name}
               </Checkbox>
            </li>
             ))}
