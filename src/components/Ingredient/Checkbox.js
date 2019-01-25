@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class Checkbox extends Component {
   constructor(props){
     super(props);
-
     let checked = false;
-    let textDecoration = 'none'
-    if(props.isChecked != undefined &
-      props.isChecked === true){
-      console.log("Checked");
-      checked = props.isChecked;
+    let textDecoration = 'none';
+
+    if(this.props.isChecked != undefined &
+      this.props.isChecked === true){
+
+      checked = this.props.isChecked;
       textDecoration = 'line-through';
     }
     this.state = {
@@ -18,12 +18,12 @@ class Checkbox extends Component {
         'textDecoration': textDecoration
       }
     }
-    this.handleChange = this.handleChange.bind(this);
 
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentWillReceiveProps({isChecked}) {
-    if (isChecked != this.state.checked){
+    if (isChecked != undefined & isChecked != this.state.checked){
     this.setState({
       ...this.state,
       checked: isChecked,
@@ -34,8 +34,8 @@ class Checkbox extends Component {
       })
     }
   }
+  
   handleChange(){
-    console.log("checked");
        if(this.props.onAddItem != undefined &
         this.props.onDeleteItem != undefined)
        if(!this.state.checked ){
@@ -54,7 +54,12 @@ class Checkbox extends Component {
     render() {
         return (
           <label style={this.state.style}>
-            <input checked={this.state.checked} type="checkbox" name={this.props.name} onClick={this.handleChange} />
+            <input
+              checked={this.state.checked}
+              type="checkbox"
+              name={this.props.name}
+              onClick={this.handleChange} />
+
               {this.props.children}
           </label>
         );
