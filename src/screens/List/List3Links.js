@@ -9,7 +9,6 @@ class List3Links extends Component {
     super(props);
     this.state = {
       status: 'all',
-      checkedItems: [],
       data: this.props.data,
       list: this.props.data,
     }
@@ -104,7 +103,7 @@ class List3Links extends Component {
                 onDeleteItem={this.onDeleteItem}>
 
                 {item.name}
-                
+
               </Checkbox>
            </li>
             ))}
