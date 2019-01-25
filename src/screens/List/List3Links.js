@@ -9,38 +9,45 @@ class List3Links extends Component {
     super(props);
     this.state = {
       status: 'all',
-      checkedItems: [],
+      data: this.props.data,
       list: this.props.data,
     }
+
     this.onAddItem = this.onAddItem.bind(this);
     this.onDeleteItem = this.onDeleteItem.bind(this);
-
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e){
+    let result;
+
     switch(e.target.name){
       case 'all' :
         this.setState({
-          status: "all"
+          status: "all",
+          list: this.state.data
         });
       break;
 
       case "active":
-      let result =
-        _.filter(this.state.list, function(item){
+      result =
+        _.filter(this.state.data, function(item){
         return !item.isChecked
       })
         this.setState({
           status: "active",
           list: result
         });
-        console.log(result);
       break;
 
       case "purchased":
+      result =
+        _.filter(this.state.data, function(item){
+        return item.isChecked
+      })
         this.setState({
-          status: "purchased"
+          status: "purchased",
+          list: result
         });
       break;
     }
@@ -48,7 +55,7 @@ class List3Links extends Component {
 
   onAddItem(item){
     let result =
-    _.map(this.state.list, function(obj){
+    _.map(this.state.data, function(obj){
       if (obj.name === item){
         return {
           ...obj,
@@ -58,34 +65,45 @@ class List3Links extends Component {
       return obj;
     })
 
-    console.log(result);
     this.setState({
+      data: result,
       list: result
     })
   }
 
   onDeleteItem(item){
+    let result =
+    _.map(this.state.data, function(obj){
+      if (obj.name === item){
+        return {
+          ...obj,
+          isChecked: false,
+        }
+      }
+      return obj;
+    })
 
-  //   if(this.state.checkedItems != undefined ){
-  //   let tmp = this.state.checkedItems;
-  //   tmp.splice(tmp.indexOf(item))
-  //   this.setState({
-  //     checkedItems: tmp
-  //   })
-  // }
+    this.setState({
+      data: result,
+      list: result
+    })
   }
 
   render() {
-  console.log(this.state.list);
     return (
       <div>
         <ul style = {{"list-style-type": "none"}}>
             {this.state.list.map(
               (item, index) =>(
             <li id={shortid.generate()}>
-              <Checkbox name={item.name} isChecked={item.isChecked} onAddItem={this.onAddItem}
-                                    onDeleteItem={this.onDeleteItem}>
+              <Checkbox
+                name={item.name}
+                isChecked={item.isChecked}
+                onAddItem={this.onAddItem}
+                onDeleteItem={this.onDeleteItem}>
+
                 {item.name}
+
               </Checkbox>
            </li>
             ))}
