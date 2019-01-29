@@ -99,4 +99,3 @@ Note: we should have an ACL(Controlling data access), so user are not able to de
 
 - Each component should looks simple and understandable
 - We should use [ReactStrap](https://reactstrap.github.io/) components for faster development process
-- You should create and maintain documentation [GitBook](https://www.gitbook.com/)
