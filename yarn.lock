@@ -894,10 +894,11 @@
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
 
-"@groceristar/groceristar-fetch@1.1.54":
-  version "1.1.54"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.54.tgz#a4be5929c6b9ffc065dd94cab46e0f4f6ddf81c7"
+"@groceristar/groceristar-fetch@1.1.58":
+  version "1.1.58"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.58.tgz#a28ae698c4fc7de7b80391cdd6e0783f30a91887"
   dependencies:
+    dayjs "^1.8.0"
     fs "0.0.1-security"
     lodash "^4.17.10"
     underscore "^1.9.1"
@@ -2825,6 +2826,10 @@ data-urls@^1.0.0, data-urls@^1.0.1:
 date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
+
+dayjs@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.0.tgz#507963ac3023f4b1f9f399a278356946fc4c9ae9"
 
 debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
