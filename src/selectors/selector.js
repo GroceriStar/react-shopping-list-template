@@ -1,4 +1,4 @@
-import { groceristar } from "@groceristar/groceristar-fetch";
+import { groceristar, gsLoopback } from "@groceristar/groceristar-fetch";
 
 const getGroceryById = (id) => {
   return groceristar.getGroceryById(id);
@@ -47,6 +47,20 @@ function getGroceryCollection(){
   return groceristar.getGroceryShowcase();
 }
 
+// GS Loopback
+function getUltimateGrocery(){
+  return gsLoopback.getUltimateGrocery();
+};
+
+function getGLwithUserRelations(){
+  return gsLoopback.getGLwithUserRelations();
+};
+
+function getIngredientsSampleFromDB(){
+  return gsLoopback.getIngredientsSampleFromDB();
+};
+
+
 export {
   getGroceryById,
   getIngredients,
@@ -56,5 +70,10 @@ export {
   getDepartments,
   getGroceryByName,
   getListOfIngredients,
-  getGroceryCollection
+  getGroceryCollection,
+
+  getUltimateGrocery,
+  getGLwithUserRelations,
+  getIngredientsSampleFromDB
+
 }
