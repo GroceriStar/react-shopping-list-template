@@ -894,9 +894,9 @@
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
 
-"@groceristar/groceristar-fetch@1.1.59":
-  version "1.1.59"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.59.tgz#60057b0a4e85ec7eb4226f06455d2eedaf9fe715"
+"@groceristar/groceristar-fetch@1.1.60":
+  version "1.1.60"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.60.tgz#1ee944a07e34047bb5c467996a41d081615a7f1f"
   dependencies:
     dayjs "^1.8.0"
     fs "0.0.1-security"
