@@ -910,6 +910,14 @@
   dependencies:
     uuid "^3.3.2"
 
+"@groceristar/shoplist-blocks-component@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@groceristar/shoplist-blocks-component/-/shoplist-blocks-component-1.0.1.tgz#428f480486361966ce3b0bdf4a9d4c030e5d63d9"
+  integrity sha512-JDMOnI85gT9EvK6g/IXLU9Gw4aGQrsIx3vJFXM9mhu81//+HaX9MG9IFTm80TH0jJsC24lE5SxW5h7jIH2Ovmw==
+  dependencies:
+    antd "^3.13.2"
+    uuid "^3.3.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
