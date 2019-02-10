@@ -4,24 +4,25 @@ import Selectbox            from "../Selectbox";
 import { getDepartments }   from "../../../selectors/selector";
 
 class Form1 extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
       ingredient: "",
       selectedDepartment: ""
     };
-    
+
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSelect = this.handleSelect.bind(this);
   }
-  
+
   handleChange(e) {
     this.setState({
       ingredient: e.target.value
     });
   }
-  
+
   handleSubmit(e) {
     let obj = {
       ingredient: this.state.ingredient,
@@ -31,18 +32,18 @@ class Form1 extends Component {
     console.log(obj);
     e.preventDefault();
   }
-  
+
   handleSelect(department) {
     this.setState({
       selectedDepartment: department
     });
   }
-  
+
   //@TODO Query for DB
   updateDB(){
 
   }
-  
+
   render() {
     return (
       <div>

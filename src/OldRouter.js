@@ -19,6 +19,17 @@ import GroceryView from './views/GroceryView/GroceryView';
 
 import Departments from './screens/Departments/Departments';
 import Ingredients from './screens/Ingredients/Ingredients';
+
+
+
+
+
+
+
+
+
+
+
 import Examples    from './views/Examples/Examples';
 import DeleteLink  from './views/Examples/DeleteLink';
 import EditLink    from './views/Examples/EditLink';
@@ -42,13 +53,30 @@ class OldRouter extends Component {
 
 
 
-          <Route path='/grocery-example'     component={GroceryView} exact /> 
+          <Route path='/grocery-example'     component={GroceryView} exact />
 
           <Route path='/ingredients' component={Ingredients} exact />
+
+
+
+
+
+
+
+
 
           <Route path='/examples'    component={Examples} exact />
           <Route path='/examples/delete/:id' component={DeleteLink} />
           <Route path='/examples/edit/:id' component={EditLink} />
+
+
+
+
+
+
+
+
+
       </Switch>
     );
   }

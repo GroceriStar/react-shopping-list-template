@@ -2,6 +2,10 @@ import React, { Component, Fragment } from "react";
 import { DragDropContextProvider } from 'react-dnd'
 import ReactDnDHTML5Backend from "react-dnd-html5-backend";
 
+
+
+
+
 import SimpleText     from "../../components/Ingredient/SimpleText";
 import Checkbox       from "../../components/Ingredient/Checkbox";
 import DeleteLink     from "../../components/Ingredient/DeleteLink";
@@ -34,6 +38,10 @@ import ListCheckboxDeleteIcon   from "../../screens/List/ListCheckboxDeleteIcon"
 import ListCheckboxStatus   from "../../screens/List/ListCheckboxStatus";
 import List3Links   from "../../screens/List/List3Links";
 import ListLayouts   from "../../screens/List/ListLayouts";
+
+
+
+
 
 import { getAllIngredients, getDepartments } from "../../selectors/selector";
 
