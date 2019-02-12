@@ -7,7 +7,7 @@
     "@groceristar/grocery-component": "^1.0.6",
     "@groceristar/shoplist-blocks-component": "^1.0.1",
     "antd": "^3.13.2",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "raven-js": "^3.27.0",
