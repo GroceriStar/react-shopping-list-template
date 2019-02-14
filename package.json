@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@groceristar/groceristar-fetch": "1.1.61",
+    "@groceristar/groceristar-fetch": "1.2.2",
     "@groceristar/grocery-component": "^1.0.6",
     "@groceristar/shoplist-blocks-component": "^1.0.1",
     "antd": "^3.13.2",
