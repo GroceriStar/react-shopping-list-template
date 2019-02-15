@@ -12,7 +12,7 @@ import {
 import Home        from './views/Home/Home';
 import Profile     from './views/Profile/Profile';
 import New         from './views/New/New';
-import List        from './screens/List/List';
+// import List        from './screens/List/List';
 
 
 import GroceryView from './views/GroceryView/GroceryView';
@@ -42,7 +42,7 @@ class OldRouter extends Component {
           <Route path='/profile'     component={Profile} />
 
           <Route path='/new'         component={New} />
-          <Route path='/list'        component={List} />
+        {/*<Route path='/list'        component={List} />*/}
           <Route path='/departments' component={Departments} />
           {/* Are we reallly can have exact for a few routes? */}
 
