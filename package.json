@@ -5,7 +5,7 @@
   "dependencies": {
     "@groceristar/groceristar-fetch": "1.2.3",
     "@groceristar/grocery-component": "^1.0.6",
-    "@groceristar/shoplist-blocks-component": "^1.0.1",
+    "@groceristar/shoplist-blocks-component": "^1.0.5",
     "antd": "^3.13.2",
     "bootstrap": "^4.3.0",
     "classnames": "^2.2.6",
