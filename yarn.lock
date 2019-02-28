@@ -964,10 +964,10 @@
     path "^0.12.7"
     uuid "^3.3.2"
 
-"@groceristar/shoplist-blocks-component@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@groceristar/shoplist-blocks-component/-/shoplist-blocks-component-1.0.9.tgz#8df22cb95924f8a6aea2fed4bfdc03b8299498e3"
-  integrity sha512-0aUOEB4u+jIcvd4Vi+px18QtJwriS2sF3yKyLiFhoDTcQrTAClBuSadN61SR5yORciRs8fR4S4nMSw2uKB4BlQ==
+"@groceristar/shoplist-blocks-component@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@groceristar/shoplist-blocks-component/-/shoplist-blocks-component-1.0.10.tgz#642ca638151025dcb1b3ce278debb31ce8d97c8a"
+  integrity sha512-1CNf3aU8hXe6bUaKfuqsSOEzd9sP6ZxepyDnhh23jx3crcaNiV1DiSQANrKMGa9iqLDw3ozQxPoMoDKt/SxtSg==
   dependencies:
     "@groceristar/groceristar-fetch" "^1.1.61"
     "@groceristar/grocery-component" "^1.0.6"
