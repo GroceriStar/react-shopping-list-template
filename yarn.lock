@@ -949,9 +949,10 @@
     underscore "^1.9.1"
     uuid "3.3.2"
 
-"@groceristar/grocery-component@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@groceristar/grocery-component/-/grocery-component-1.0.6.tgz#ebc527728815c7b5b51e4688a71d99075f94940d"
+"@groceristar/grocery-component@^1.0.6", "@groceristar/grocery-component@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@groceristar/grocery-component/-/grocery-component-1.0.9.tgz#dd39db7d02d4e1333a2378109ccd0b1e310213eb"
+  integrity sha512-J0pWd/S6yQiVF7BR4bueeYKtKezajoEwbTDD1F6arFLZ8ZhY8dp756fvDiCHVVzZvJ4edkFOuZkX8IwVLjGeDw==
   dependencies:
     uuid "^3.3.2"
 
@@ -964,13 +965,13 @@
     path "^0.12.7"
     uuid "^3.3.2"
 
-"@groceristar/shoplist-blocks-component@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@groceristar/shoplist-blocks-component/-/shoplist-blocks-component-1.0.9.tgz#8df22cb95924f8a6aea2fed4bfdc03b8299498e3"
-  integrity sha512-0aUOEB4u+jIcvd4Vi+px18QtJwriS2sF3yKyLiFhoDTcQrTAClBuSadN61SR5yORciRs8fR4S4nMSw2uKB4BlQ==
+"@groceristar/shoplist-blocks-component@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@groceristar/shoplist-blocks-component/-/shoplist-blocks-component-1.0.14.tgz#f4af25d7207385a87ab7e48b9be3860ac2f44863"
+  integrity sha512-IcixNFnJ75omZwTBQGYv7qTOZkkP2UnBt4YA9jBzZSKi+L6apT24Mnu6c/YVtd4riT8mt14JQaFv1UFFbqfJpA==
   dependencies:
     "@groceristar/groceristar-fetch" "^1.1.61"
-    "@groceristar/grocery-component" "^1.0.6"
+    "@groceristar/grocery-component" "^1.0.9"
     antd "^3.13.2"
     lodash "^4.17.11"
     react-dnd "^7.0.2"
