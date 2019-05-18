@@ -13,7 +13,7 @@
     "raven-js": "^3.27.0",
     "react": "^16.8.3",
     "react-dnd": "^7.0.2",
-    "react-dnd-html5-backend": "^7.0.2",
+    "react-dnd-html5-backend": "^7.4.4",
     "react-dom": "^16.8.3",
     "react-final-form": "^5.1.0",
     "react-router-config": "^4.4.0-beta.6",
