@@ -19,7 +19,7 @@
     "react-router-config": "^4.4.0-beta.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
-    "react-select": "^2.4.1",
+    "react-select": "^3.0.3",
     "reactstrap": "^7.1.0",
     "shortid": "^2.2.14"
   },
