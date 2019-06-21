@@ -9305,13 +9305,13 @@ react-error-overlay@^5.1.6:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
 
-react-final-form@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/react-final-form/-/react-final-form-6.2.0.tgz#cf198eb3f43642acc1d03f083d09d9d7c1e04ef6"
-  integrity sha512-nSxnp5emlF9IHG98TviWTAW21IoI3BwBPb7wHy8SHTvHXwTs/HjSlqvO3CvZ2yyLkN1lRYftWO611xNyCze+CQ==
+react-final-form@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/react-final-form/-/react-final-form-6.3.0.tgz#b85ae123a3796b3e0c8f56033c8a5037f4497e76"
+  integrity sha512-jijhXR1fFGUBQwNOSqF4MK8XJO7Ynl1p8vcFsnQS0INSkGI52+4IagjUgtHj3w8EviIHPFK/Eflji6FELUl07w==
   dependencies:
     "@babel/runtime" "^7.4.5"
-    ts-essentials "^2.0.2"
+    ts-essentials "^2.0.8"
 
 react-input-autosize@^2.2.1:
   version "2.2.1"
@@ -10846,10 +10846,10 @@ trough@^1.0.0:
   resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.3.tgz#e29bd1614c6458d44869fc28b255ab7857ef7c24"
   integrity sha512-fwkLWH+DimvA4YCy+/nvJd61nWQQ2liO/nF/RjkTpiOGi+zxZzVkhb1mvbHIIW4b/8nDsYI8uTmAlc0nNkRMOw==
 
-ts-essentials@^2.0.2:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-2.0.8.tgz#52955ef759901276c48e90e05aae7710155694b2"
-  integrity sha512-GCs7d/LHQvvgvWaHs2Wv/tDq4WwSZDlkYw9iE6orXaVFqL65P4oi5BE+7hYP0bByqoVwk8BJevmyzFwuGXAfKQ==
+ts-essentials@^2.0.8:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-2.0.10.tgz#c44ebe16ee8089c6cbb9a423ed14f700dd4fe58e"
+  integrity sha512-QnjI4QUa+dgP6NU6+uicEN7HDHrsyX26tCyhysmowfnGrGhs+gY9i5fDmMDBF+Bu7X3/mHUlag9jvkqsPaXJiA==
 
 ts-pnp@1.1.2, ts-pnp@^1.0.0:
   version "1.1.2"
