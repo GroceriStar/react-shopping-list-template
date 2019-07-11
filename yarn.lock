@@ -1120,6 +1120,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.4.4":
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.4.tgz#cb7d1ad7c6d65676e66b47186577930465b5271b"
+  integrity sha512-Na84uwyImZZc3FKf4aUF1tysApzwf3p2yuFBIyBfbzT5glzKTdvYI4KVW4kcgjrzoGUjC7w3YyCHcJKaRxsr2Q==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.44.tgz#f8832f4fdcee5d59bf515e595fc5106c529b394f"
@@ -1731,6 +1738,11 @@
   version "2.2.29"
   resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.29.tgz#aa845204cd0a289f65d47e0de63a6a815e30cc66"
   integrity sha512-lRVw09gOvgviOfeUrKc/pmTiRZ7g7oDOU6OAutyuSHpm1/o2RaBQvRhgK8QEdu+FFuw/wnWb29A/iuxv9i8OpQ==
+
+"@types/invariant@^2.2.30":
+  version "2.2.30"
+  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.30.tgz#20efa342807606ada5483731a8137cb1561e5fe9"
+  integrity sha512-98fB+yo7imSD2F7PF7GIpELNgtLNgo5wjivu0W5V4jx+KVVJxo6p/qN4zdzSTBWy4/sN3pPyXwnhRSD28QX+ag==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
@@ -3955,6 +3967,17 @@ dnd-core@^8.0.2:
   dependencies:
     "@types/asap" "^2.0.0"
     "@types/invariant" "^2.2.29"
+    asap "^2.0.6"
+    invariant "^2.2.4"
+    redux "^4.0.1"
+
+dnd-core@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-9.1.0.tgz#1148c6c456ab2b392024365ef88fee0718d1620b"
+  integrity sha512-G9k/NnFyMNTsFHjFQGKa3ZM6X7lpiwaPjTh9jrjzSsSBpzFnZIA41q/2OsnNIr4gJkpmTUm6CvbDW8Js696w1Q==
+  dependencies:
+    "@types/asap" "^2.0.0"
+    "@types/invariant" "^2.2.30"
     asap "^2.0.6"
     invariant "^2.2.4"
     redux "^4.0.1"
@@ -9273,12 +9296,19 @@ react-dev-utils@^9.0.1:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dnd-html5-backend@^7.0.2, react-dnd-html5-backend@^7.4.4:
+react-dnd-html5-backend@^7.0.2:
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-7.4.4.tgz#3372e5af4af24f680cd75900c782606539c01220"
   integrity sha512-X/lP92ateY0glHan8mU0JzjBuZL6VHv2Gc/H9OBBxaf/ZCN1oC16MLKdesqG4x1f/NWFTNtuG3W4B99r5gPVog==
   dependencies:
     dnd-core "^7.4.4"
+
+react-dnd-html5-backend@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-9.1.0.tgz#a0d842306eddb472b85d6c37b9452f99170642af"
+  integrity sha512-qqHn6hDb+1cmdI6UpcNXnmr4w9lizr1ZfofchOCmUJ87fLGFKk8wUHToGoVwl1JYLf1RCww9n9dR7uRcjwZlKg==
+  dependencies:
+    dnd-core "^9.1.0"
 
 react-dnd@^7.0.2:
   version "7.4.5"
