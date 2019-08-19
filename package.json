@@ -6,7 +6,7 @@
     "@groceristar/groceristar-fetch": "2.1.12",
     "@groceristar/grocery-component": "^1.0.10",
     "@groceristar/shoplist-blocks-component": "^1.0.15",
-    "antd": "^3.19.6",
+    "antd": "^3.22.0",
     "bootstrap": "^4.3.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.13",
