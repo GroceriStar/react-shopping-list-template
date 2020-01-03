@@ -10,7 +10,7 @@
     "bootstrap": "^4.3.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.13",
-    "raven-js": "^3.27.0",
+    "raven-js": "^3.27.2",
     "react": "^16.8.6",
     "react-dnd": "^8.0.2",
     "react-dnd-html5-backend": "^7.4.4",
