@@ -21,7 +21,8 @@
     "react-scripts": "3.0.1",
     "react-select": "^3.0.4",
     "reactstrap": "^7.1.0",
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +30,9 @@
     "test": "react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --watch",
     "test:coverage": "react-scripts test --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
@@ -45,5 +48,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
