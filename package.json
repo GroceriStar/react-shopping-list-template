@@ -7,9 +7,9 @@
     "@groceristar/grocery-component": "^1.0.10",
     "@groceristar/shoplist-blocks-component": "^1.0.15",
     "antd": "^3.26.5",
-    "bootstrap": "^4.3.0",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "raven-js": "^3.27.0",
     "react": "^16.8.6",
     "react-dnd": "^8.0.2",
@@ -17,11 +17,12 @@
     "react-dom": "^16.8.3",
     "react-final-form": "^6.3.0",
     "react-router-config": "^5.0.1",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "5.0.0",
     "react-select": "^3.0.4",
     "reactstrap": "^7.1.0",
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +30,9 @@
     "test": "react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --watch",
     "test:coverage": "react-scripts test --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
@@ -45,5 +48,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
