@@ -18,7 +18,7 @@
     "react-final-form": "^6.3.0",
     "react-router-config": "^5.0.1",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "3.3.0",
     "react-select": "^3.0.4",
     "reactstrap": "^7.1.0",
     "shortid": "^2.2.14"
