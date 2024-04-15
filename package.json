@@ -9,7 +9,7 @@
     "antd": "^3.26.5",
     "bootstrap": "^4.3.0",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.17",
     "raven-js": "^3.27.0",
     "react": "^16.8.6",
     "react-dnd": "^8.0.2",
@@ -18,7 +18,7 @@
     "react-final-form": "^6.3.0",
     "react-router-config": "^5.0.1",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "4.0.0",
     "react-select": "^3.0.4",
     "reactstrap": "^7.1.0",
     "shortid": "^2.2.14"
